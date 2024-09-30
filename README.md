@@ -1,3 +1,8 @@
+# Podcast
+
+<audio controls="1" controlslist="nodownload nofullscreen noremoteplayback" src="[x-devonthink-item://9CFD5BD2-EB05-41EB-83EB-88A666381953](https://github.com/unicornlaunching/stacksAIbuildathon/blob/main/The%20Syndicate%20AI%20Buildathon%20on%20Stacks%202024%20v2.wav)">Your browser does not support the audio tag.</audio>
+---
+
 # **Stacks Ecosystem Security Shift**
 
 This document analyzes the key decisions and discussions surrounding the shift in focus from an AI-powered community copilot to prioritizing security tools within the Stacks ecosystem.
