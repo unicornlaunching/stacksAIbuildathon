@@ -1,6 +1,11 @@
 # Podcast
 
-<audio controls="1" controlslist="nodownload nofullscreen noremoteplayback" src="[x-devonthink-item://9CFD5BD2-EB05-41EB-83EB-88A666381953](https://github.com/unicornlaunching/stacksAIbuildathon/blob/main/The%20Syndicate%20AI%20Buildathon%20on%20Stacks%202024%20v2.wav)">Your browser does not support the audio tag.</audio>
+<audio controls>
+  <source src="[path-to-your-file.wav](https://github.com/unicornlaunching/stacksAIbuildathon/blob/main/The%20Syndicate%20AI%20Buildathon%20on%20Stacks%202024%20v2.wav)" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+
 ---
 
 # **Stacks Ecosystem Security Shift**
