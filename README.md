@@ -107,3 +107,5 @@ By developing **accessible security tools**, fostering collaboration, and promot
 - [] PHASE FOUR: COMPARE MALICIOUS PATTERN DATABASE TO MEMPOOL TRANSACTIONS
 - [] PHASE FIVE: ASSIGN SURFACE ATTACK AREA SCORE AND OTHER SCORES TO EACH TRANSACTION
 - [] PHASE SIX: CREATE USER INTERFACE THAT DISPLAYS UNCONFIRMED TRANSACTIONS WITH SCORES
+
+Here's a podcast episode that bottom lines the entire document above and the [proposed solution](https://notebooklm.google.com/notebook/2c739369-b45f-4548-8fe1-8d254e383e9b/audio).
