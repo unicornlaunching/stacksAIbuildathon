@@ -1,11 +1,6 @@
 # Podcast
 
-<audio controls>
-  <source src="[path-to-your-file.wav](https://github.com/unicornlaunching/stacksAIbuildathon/blob/main/The%20Syndicate%20AI%20Buildathon%20on%20Stacks%202024%20v2.wav)" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-
-
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">4:01:25 is the after-show 🤪<a href="https://t.co/uZEAkGGVPW">https://t.co/uZEAkGGVPW</a></p>&mdash; Soyouwanna (@attractfund1ng) <a href="https://twitter.com/attractfund1ng/status/1840298989511393741?ref_src=twsrc%5Etfw">September 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
 
 # **Stacks Ecosystem Security Shift**
