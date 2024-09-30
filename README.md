@@ -4,6 +4,12 @@ This document analyzes the key decisions and discussions surrounding the shift i
 
 ---
 
+# Missed The Syndicate AI Buildathon on Stacks this weekend?
+
+Here's a ten-minute podcast that'll get you all caught up: [The Syndicate AI Buildathon on Stacks Podcast]([https://www.google.com](https://notebooklm.google.com/notebook/ae578824-1755-4c84-91f8-7aeb58f6e631/audio))
+
+---
+
 ## 1. **Redirecting Funding and Development Priorities**
 
 ### 1.1 **From "Cindy" to Security Champions**
