@@ -102,6 +102,6 @@ By developing **accessible security tools**, fostering collaboration, and promot
 
 # 6. Suggestions from the audience
 
-[ ] Compile a data structure with malicious patterns.
-[ ] Run a stacks node.
-[ ] Once a stacks node is running, we can analyze the relevant transactions from the mempool that have a potential to create an attack surface.
+- [ ] Compile a data structure with malicious patterns.
+- [ ] Run a stacks node.
+- [ ] Once a stacks node is running, we can analyze the relevant transactions from the mempool that have a potential to create an attack surface.
