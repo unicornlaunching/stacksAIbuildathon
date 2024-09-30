@@ -100,8 +100,11 @@ By developing **accessible security tools**, fostering collaboration, and promot
 
 ---
 
-# 6. Suggestions from the audience
+# 6. Suggestions from the CASPIAQ
 
-- [ ] Compile a data structure with malicious patterns.
-- [ ] Run a stacks node.
-- [ ] Once a stacks node is running, we can analyze the relevant transactions from the mempool that have a potential to create an attack surface.
+- [] ## PHASE ONE: RUN STACKS NODE
+- [] ## PHASE TWO: POPULATE DATABASE WITH MEMPOOL TRANSACTIONS
+- [] ## PHASE THREE: BUILD MALICIOUS PATTERN DATABASE
+- [] ## PHASE FOUR: COMPARE MALICIOUS PATTERN DATABASE TO MEMPOOL TRANSACTIONS
+- [] ## PHASE FIVE: ASSIGN SURFACE ATTACK AREA SCORE AND OTHER SCORES TO EACH TRANSACTION
+- [] ## PHASE SIX: CREATE USER INTERFACE THAT DISPLAYS UNCONFIRMED TRANSACTIONS WITH SCORES
