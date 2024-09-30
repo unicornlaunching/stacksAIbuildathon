@@ -97,3 +97,11 @@ The accuracy and effectiveness of these tools depend on the **quality and scope*
 
 Addressing the need for **increased security awareness** and **education** within the community.  
 By developing **accessible security tools**, fostering collaboration, and promoting best practices, the group aims to create a more **secure** and **resilient** Stacks ecosystem.
+
+---
+
+# 6. Suggestions from the audience
+
+[ ] Compile a data structure with malicious patterns.
+[ ] Run a stacks node.
+[ ] Once a stacks node is running, we can analyze the relevant transactions from the mempool that have a potential to create an attack surface.
