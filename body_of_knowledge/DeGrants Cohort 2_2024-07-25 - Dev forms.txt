@@ -1,0 +1,1217 @@
+,,Finalized (pending Stacks Foundation confirmation),,,,,,,,Finalized (pending Stacks Foundation confirmation),,,,,,,,,,,,,,,,,,,,,,,,"Rating Rate 1 - 10 
+1 is lowest, 10 is highest, 
+Review Criteria: Impact, Feasibility, Team Experience, Innovation and Quality, Self-Sustainability 
+some criteria may not be applicable to some proposals, and may be track specific, please use your own judgement. 
+General guide:https://docs.degrants.xyz/application-process/review-criteria",,,,,,,Comments,,,,,,,,,,,,,
+Timestamp,Email Address,Project Name,Developers Main Focus,One Liner,Project Description,Elevator Video Pitch (Optional),Impact,"Project Timelines, Milestones and Deliverable metrics",Overall Cost,,Budgeting,Self-Sustainability Plans,Is / will this project be open-sourced?,Why are you the right person to make this project?,"Challenges, Barriers, Risks, Competition",Supplemental materials (optional),"Your Name
+If you have a team, please provide the names of all team members. These details are public so please do not provide real names if you are anon.",Prior Contributions ,X/Twitter,"Console 
+Include Console Username e.g. https://app.console.xyz/u/herogamer
+If you have not yet joined console, please do so here: https://app.console.xyz/c/degrants-stx
+If you do not have a STX wallet, by joining Console one will automatically be generated for you.",Discord username,Github (Required),Email,References,"Have you ever received or applied for a grant / funding from Stacks Foundation before? If yes, what was it for and when? Has this project received funding, or will receive funding, or being applied to other grants program in crypto?","I acknowledge that my grant proposal details and applicant information will be publicly accessible to ensure maximum transparency. I understand that the grant stewards, grant program, and its administrators cannot be held liable for any potential misuse of this information.","I understand that my grant request will require undergoing Know Your Customer (KYC) verification for legal documentation purposes as part of the grant application process, in addition to completing the signing of grant contracts.",I commit to upholding ethical standards and will not engage in practices like plagiarism or misrepresentation in my proposal or project.,"I respect and appreciate the voluntary contributions of grant stewards and will maintain open and respectful communication with them. In cases of disagreement or rejection, I understand that stewards serve in an advisory capacity and cannot be held liable for their decisions. We aim to provide feedback within the limitations of their time.","If my proposal receives approval, I am fully committed to adhering to the program's guidelines and terms. This includes providing regular progress updates and meeting deliverable metrics to ensure transparency and accountability within the community.","I acknowledge that any attempt to manipulate or deceive the grant process may result in disqualification or further actions, including the potential withholding of funds.",,Average,"Davek
+@davek_btc","Rafael
+@rafaelcr","Sam
+@TheLiberalThumb","Binaya
+@binaya_btc","J2p2
+@_jiga","TripnMonkey
+@tripnm0nkey",,"Davek
+@davek_btc","Rafael
+@rafaelcr","Sam
+@TheLiberalThumb","Binaya
+@binaya_btc","J2p2
+@_jiga","TripnMonkey
+@tripnm0nkey",,New to Stacks?,,,Will it impact by technical dependency? If yes what? ,Will all milestones be completed by end of October?,Assumptions,Risk & Mitigation Plans
+6/30/2024 17:36:57,friedger@gmail.com,TX2 - Sponsoring Service for Stacks Transactions,Infrastructure,TX2 is a backend service that enables users to interact with the Stacks blockchain without holding STX.,"As a user, I have wrapped USD or wrapped BTC on Stacks, but I don't own STX. How can I swap or move my token on Stacks? Or I want to receive a SIP-010 token on a new account to increase privacy. How can I use the token without transferring STX from my old account to the new account? For users who do not have stx on their account, we want to offer an open source solution that allows them to pay transaction fees in other tokens than STX. This service works through so-called sponsored transactions. It can be integrated with different dApps and wallets.",,"Project Focus and Impact
+The project is infrastructure that can be used by different dApps and wallets. It removes barriers for new users to enter the Stacks ecosystem. 
+
+Target Audience and Strategy
+The project targets developer of dApps and wallets. We will reach out individually first and try to integrate TX2 with two dApps and 1 wallet. With the experience from these integrations, we will produce better public documentation.
+
+Project Activities and Outputs
+Development of backend: A (serverless) service that accepts sponsored txs and signs them after validation
+Development of web app: A simple app that allows to manage a sponsorship service
+Documentation: Details how to integrate sponsorship services into dApps and wallets.
+Community outreach: Discussions about and integration with dApps and wallets.","Milestone 1 (mid June) completed: Proof of concept with sendstx.com and NOT token sponsorship
+Milestone 2 (mid July): Landing page
+Milestone 3 (mid August): Management app for sponsorship service
+Milestone 4 (mid September): Integration with one or two dApps (when fast blocks are live)
+Milestone 5 (mid October): Integration with Smart Wallet (or alternative wallet)
+
+Note that the timeline is stretched to fit the Nakamoto release.",2000,"$2,006","$ 1k Development of landing page
+$ 2k Development of management app
+$ 5k Integration with dApps and wallets
+$ 2k Content creation <-- looking for support for this",The project receives fees from users (in other tokens than STX). The project can help projects to integrate sponsorship service for a fee. Apps using TX2 have an interest to keep the service alive. There are also ideas to implement a subscription model (using Smart Wallet)," Yes, for POC see https://github.com/friedger/stacks-not-sponsoring/ and https://github.com/friedger/stacks-send-many","Long time Stacks OG with developer experience (sendstx.com, Ryder handles, catamaranswaps, ..)","Project Challenges and Risk Mitigation
+
+    ""Pay fees in sBTC"" might be part of the consensus rules and a sponsorship service is not required any more for BTC. See https://github.com/stacks-network/sbtc-docs/issues/27. However, TX2 still makes sense for other tokens like meme coins or wrapped USD.
+
+    Copycats who offer the same service, and we run out of business. However, competition is good for innovation.
+
+    The service receives spam txs that are paid for but fail, and no compensation is received. However, we can improve the verification of received txs and even simulate the execution before sponsoring. 
+
+    Stacks 3.0 does not launch. However, then we all will pivot anyway, I guess.
+
+
+Obstacles and Implementation Barriers
+The handling of nonces is challenging for sponsored transaction. However, Stacks 3.0 will bring fast blocks reducing the challenges because nonces are process more quickly. TX2 can also use more than one sponsorship address, e.g. one per request.
+
+The integration of TX2 with sendstx.com showed that it works. However, the verification of received txs might take more effort than we think. The TX2 will have different verification modules to address challenges for different tx types.
+
+Market Competition and Impact
+There is no public sponsorship service available now. There are running some bots in the background that execute txs in the name of users (e.g. bridges).
+TX2 will lower the barrier to enter the Stacks ecosystem.","https://github.com/friedger/stacks-not-sponsoring 
+https://github.com/friedger/stacks-send-many",Friedger,"sendstx.com, contribution to stacks-core, catamaranswaps.org, ..",https://x.com/spm1ne,https://app.console.xyz/u/friedger.btc,friedger,https://github.com/friedger,friedger@gmail.com,"Dan, HeroGamer, Whoabuddy, Brice, Rapha, Algorithm, Mike, Werner, Shannon, Zero",Stacks Foundation grants for Public Profiles and for Speed Spend,Yes,Yes,Yes,Yes,Yes,Yes,,9.17,9,10,8,9,10,9,,,,Great project ,,,,,No,,,No,Yes,,
+6/27/2024 16:20:39,dantrevino@gmail.com,Boom Payment Request Standard,Bitcoin to Stacks connection,eveloping an open standard for payment requests bridging Bitcoin and Stacks.,"The Boom Payment Request Standard project aims to create an open, standardized specification and API for payment requests that seamlessly integrate Bitcoin and Stacks. This standard will enable developers to create interoperable payment solutions, fostering innovation and adoption across both ecosystems. By providing a unified approach to payment requests, we'll simplify the development process, enhance user experience, and strengthen the connection between Bitcoin and Stacks networks. The project will include comprehensive documentation, reference implementations, and developer tools to encourage widespread adoption.",,"#### Project Focus and Impact:
+Our project focuses on creating a standardized payment request system connecting Bitcoin and Stacks. Quantitatively, we aim to have at least 5 projects adopt our standard within 6 months of completion. Qualitatively, we expect to simplify cross-chain payments and foster greater interoperability between Bitcoin and Stacks ecosystems.
+
+#### Target Audience and Strategy:
+We target developers building payment solutions on both Bitcoin and Stacks. Our strategy involves creating clear, developer-friendly documentation, providing sample implementations, and engaging with the developer community through workshops and hackathons.
+
+#### Project Activities and Outputs:
+Activities include developing the standard specification, creating reference implementations, and producing comprehensive documentation. Outputs will be the published standard, open-source code repositories, and developer resources.","Milestone 1 (Month 2): Draft specification completed, 30% of reference implementation done.
+Milestone 2 (Month 3): Final specification published, full reference implementation completed.
+Milestone 3 (Month 6): Developer documentation finished, 10 projects adopting the standard.",4000,"$1,970","- Standard Development: $2,000
+- Reference Implementation: $1,000
+- Documentation and Developer Resources: $1,000","Long-term, we plan to maintain and evolve the standard through community contributions. We envision this becoming a cornerstone for Bitcoin-Stacks interoperability, driving ongoing development and adoption.  After a period of experimental implementation, a SIP will be proposed to ensure ongoing interoperability and usage.",Yes,"I have extensive experience in both Bitcoin and Stacks development.  I am a contributor to the SIP-16 standard, and part of the Technical CAB that reviews new standards proposed for the Stacks Ecosystem. The Boom team has a proven track record in creating smart-contract-based open standards and fostering developer adoption.","#### Project Challenges and Risk Mitigation:
+Challenges include potential resistance to a new standard and technical complexities in cross-chain interactions. We'll mitigate these through extensive community engagement and rigorous testing and by leaning on existing, well-known payment standards from other areas.
+
+#### Obstacles and Implementation Barriers:
+We may face challenges in achieving consensus on the standard. We'll overcome this by actively involving key stakeholders from both Bitcoin and Stacks communities in the development process. In addition, the viability of sBTC as a payment option depends on the successful implementation of the Nakamoto and sBTC hardforks.
+
+#### Market Competition and Impact:
+While other payment standards exist, none effectively bridge Bitcoin and Stacks. Our standard will fill this gap, enhancing interoperability.",,Dan Trevino,Contributions to Stacks documentation and open-source libraries,https://twitter.com/dantrevino,dan.btc,dantrevino,https://github.com/dantrevino,dantrevino@gmail.com,"- Friedger Müffke, Stacks Developer
+- Marvin Janssen, CTO at Ryder.id",Yes.  I was a previous Stacks Resident.  This project has NOT received any funding or grants.,Yes,Yes,Yes,Yes,Yes,Yes,,9.00,9,10,10,6,10,9,,,,Boom is an OG project.,,,,,No,,,No,Yes,,
+6/28/2024 7:35:05,jeevanjutla12@gmail.com,Gecko Fuzz - Automated Auditing using AI and Fuzzing,Developer Tooling,"Gecko is a platform for automated security testing of Clarity smart contracts for all Stacks developers. This grant aims to develop a fully automated fuzzer, guided by LLMs to overcome the limitations of static analysis and detect novel and business logic vulnerabilities.","Gecko addresses the lack of security tooling in the Stacks ecosystem, where the only solution is manual audits that are expensive, infrequent and often incomplete. Gecko currently offers an OSS automated security solution using static analysis. This proposal aims to expand on Gecko by implementing dynamic analysis testing using a fully automated fuzzer guided by LLMs. This enhancement will overcome the limitations of static analysis, providing deeper code coverage and the ability to detect novel and business logic vulnerabilities.  Users simply provide either the deployed smart contract address or code, and Gecko Fuzz autonomously generates exploits and remediations when vulnerabilities are found, eliminating the need for manually writing invariants or specifying input generation strategies. This upgrade will ensure Clarity contracts are secured at the speed and scale necessary for the growing Stacks ecosystem.","A gecko is a small lizard that crawls around and eats bugs; similarly, Gecko Fuzz is a fuzzer that crawls through your code to find bugs. It lowers the barrier for security testing of Clarity contracts, making regular and thorough security assessments accessible to both individual developers and large teams. Gecko Fuzz is a novel tool that combines formal verification (concolic execution) with fuzzing algorithms guided by dataflow patterns and LLM comparisons to find on-chain smart contract vulnerabilities with no manual effort. Users do not need to write invariants or specify input generation strategies, as Gecko autonomously generates exploits when vulnerabilities are found.","- Project Focus and Impact:
+        - Gecko will be the first security tool in the Stacks ecosystem, addressing the lack of scalable security solutions.
+        - It will contain a database of vulnerabilities and remediations, offering real-life examples to guide developers in best practices for Clarity contract development.
+        - Gecko will reduce pre-deployment security barriers, helping developers understand attack surfaces and focus audits, thereby lowering costs and improving coverage.
+- Target Audience and Strategy:
+        - Targeting Stacks developers through community engagement, social media channels and partnerships.
+- Project Activities:
+        - Full-Time Development: Funding will support dedicated development resources to enhance Gecko.
+        - Research and Development: Innovating with new approaches to dynamic analysis security testing for Clarity contracts.
+- Outputs and Broader Impact:
+        - Providing a comprehensive automated testing solution that includes code coverage, vulnerability location, and proof of concept exploits with remediations.
+        - Expanding Gecko's capability to detect new types of vulnerabilities, broadening its applicability beyond DeFi.
+        - Promoting an open-source, AI-driven framework that encourages continuous improvement and collaboration within the community.
+        - Offering a scalable, affordable security solution that integrates into CI/CD pipelines, making regular and thorough security assessments accessible to both small developers and large teams.","- Proof of Concept Development: (1 Month FTE) $2,500
+    - Develop a semi-automated property testing fuzzer for Clarity smart contracts.
+    - Demonstrate the fuzzer and explain with examples its advantages over existing testing (Gecko Static Analysis, Clarinet tests, etc).
+- Full Automation Implementation: (1 Month FTE) $2,500
+    - Incorporate waypoint algorithms into the semi-automated property testing fuzzer, transforming it into a fully automated fuzzer.
+    - Integrate analysis of ASTs and implement a preprocessor that queries the LLMs to guide the corpus of the Fuzzer.",5000,"$1,787","$4.5K for FTE development costs
+$500 for infrastructure costs","As fuzzing performance scales linearly with the amount of CPU cores used and most users wont have the compute to continually fuzz with several cores or run a 70B parameter LLM locally, we will host a fuzzing as a service SaaS (with a free tier) using the open sourced Gecko Fuzzer, to enable users who want to easily and quickly fuzz test any contract.  The SaaS will also provide a web GUI interface that allows the users to quickly and easily see the results in a visual way. This is a way that both benefits users and allows Gecko to grow sustainably. ",Yes,"JJ is a security engineer with 5 years experience and a background in vulnerability research. JJ started his career working for the UK Intelligence and has previously worked at Binance and contracted security work for big tech companies. Now working as a smart contract auditor JJ also develops automated auditing tools using AI, fuzzing and formal verification. A x2 blackhat scholar and ranked in the top 500 globally in CTF's (competitive hacking), JJ was inspired to start building automated web3 tools after reading countless surface-level useless audit reports and discovering ways AI and automation can increase a hackers workflow.  JJ's commitment to the Clarity ecosystem is evident through my success in various hackathons, including winning first place at Consensus for developing the first static analyser for Clarity within three days. This achievement not only highlights his technical proficiency but also demonstrates his ability to deliver high-quality results under time pressure.","The project's business viability and need are clear, with the only barrier being technological feasibility. As Gecko is one of the first security tools for Clarity, much of the work is novel, requiring substantial R&D. To maximize success, we've outlined a hypothesis testing approach and created detailed technical architecture documentation, explaining the tests conducted to ensure successful development and performance. ",https://drive.google.com/file/d/1Fi2IZt1dCRBr69VZbOHsLu5G-i_h386j/view?usp=sharing,JJ,"Winner Consensus STX Hackathon, Winner London STX Hackathon, Winner Boston STX Hackathon, Member of Clarity WG and OrangeHats Initiative ",https://x.com/gecko_sec,https://app.console.xyz/u/jj,jj.6599,https://github.com/jjjutla,jeevanjutla12@gmail.com,"KennyRogers, XYZero, SetZeus, AdamHaun, C.M.P.",No,Yes,Yes,Yes,Yes,Yes,Yes,,8.17,7,10,7,6,10,9,,,,I love the project idea. Please ensure you focus on stacks because you mentioned Ordinals NFT and BNS. I am worried that you will also need a lot of money for maintenance. You might need more avenues for sustenance. ,,,,,Yes,,,No,Yes,,
+6/24/2024 0:30:10,sam@stxaus.com,Stacks Labs ,Education,We are building the go-to global Stacks developers community to nurture new developers and aspiring founders.,"Stacks Labs is an essential global community for developers and aspiring founders. We aim to bridge the crucial gap in the Stacks workforce by addressing the shortage of skilled professionals, offering Clarity lang education and mentorship to new and seasoned smart contract developers, and supporting project founders. We strive to simplify learning and facilitate the transition from enthusiasts to Bitcoin builders.",," Stacks Labs' Impact on the Stacks Ecosystem:
+- Increase the number of skilled Clarity developers by 500% within two years.
+- Launch at least 50 new Stacks-based projects through incubation and mentorship.
+- Reduce the average time for new developers to become proficient in Clarity from 6 to 4 months.
+- Create a standardized certification program recognized by at least 20 major Stacks projects.
+- Establish ten global guilds to expand the Stacks developer community internationally.
+
+2. Project Focus and Impact:
+Main impact areas:
+- Developer Education: Produce 100 - 500 certified Clarity developers in the first year.
+- Ecosystem Growth: Incubate 25 new Stacks-based projects annually.
+- Community Expansion: Grow the Stacks Labs community to 10,000 active members globally.
+- Job Creation: Facilitate 500 job placements for Stacks developers within two years.
+
+Importance: These outcomes address the critical shortage of skilled developers, accelerate ecosystem growth, and increase Stacks' global adoption and utility.
+
+3. Target Audience and Strategy:
+Target groups:
+- Aspiring blockchain developers
+- Experienced Web2 developers transitioning to Web3
+- University students in computer science and related fields
+- Existing Stacks enthusiasts looking to upskill
+
+Strategies:
+- Offer free & accessible introductory courses to attract newcomers
+- Partner with universities for accredited blockchain courses
+- Provide mentorship programs pairing experienced developers with newcomers
+- Host regular hackathons and coding challenges to engage the community
+- Collaborate with Stacks projects to create real-world learning opportunities
+
+4. Project Activities and Outputs:
+
+Activities:
+- Develop comprehensive Clarity lang curriculum and learning materials
+- Launch an online learning platform with interactive coding exercises
+- Organize monthly virtual workshops and webinars
+- Establish a mentorship program connecting experienced developers with learners
+- Host quarterly hackathons focused on Stacks development
+- Issue badges and certifications recognized in the Web 3 space
+- Create a job board and placement service for Stacks developers
+
+Outputs:
+- Complete Clarity lang curriculum covering beginner to advanced levels
+- Interactive online learning platform with 100+ hours of content
+- 12 virtual workshops and webinars annually
+- 20-50 mentor-mentee pairs established in the first year
+- 4 major hackathons with at least 200 participants each
+- Job board featuring 200+ Stacks-related positions
+
+Broader Impact:
+- Accelerated development of Stacks-based applications and services
+- Increased innovation within the Stacks ecosystem
+- Greater awareness and adoption of Stacks technology globally
+- Stronger, more interconnected Stacks developer community
+- Enhanced reputation of Stacks as a developer-friendly blockchain platform","Milestone 1 (End of Month 2)
+
+Timeline: Months 1-2
+
+Deliverables:
+1. Develop and launch a basic Clarity lang curriculum & learning platform (Beginner level)
+   - Metric: 5 modules covering foundational concepts, available online
+2. Create and implement a community engagement strategy
+   - Metric: Grow Discord community to 500 active members
+3. Establish a partnership with 5 Stacks project for real-world learning opportunities
+   - Metric: Signed partnership agreement and announced collaboration
+4. Host the first virtual workshop on Stacks development
+   - Metric: 50+ attendees, 70% satisfaction rate based on post-event survey
+
+Milestone 2 (End of Month 4)
+
+Timeline: Months 3-4
+
+Deliverables:
+1. Expand Clarity lang curriculum (Early Intermediate level)
+   - Metric: Additional three modules covering slightly more advanced concepts
+2. Launch a small-scale mentorship program
+   - Metric: 10 - 20 mentor-mentee pairs established and actively engaging
+3. Organize and complete the first mini-hackathon
+   - Metric: 50+ participants, 10+ projects submitted
+4. Implement job placements for certified and vetted developers
+   - Metric: 20+ successful engaged developers from the program
+5. Develop a framework for the certification program
+   - Metric: Certification structure and requirements outlined, ready for future implementation
+
+Overall 4-Month Metrics:
+- Total community members: 500+
+- Developers engaged in learning: 100+
+- Completed projects from hackathon and workshops: 15+
+- Hours of educational content created: 20+
+- Partnerships established: 5+",3000,"$1,662","1. Community Platform & Curriculum Development: $1500
+   - Compensate subject matter experts for creating five foundational modules
+    - Basic website hosting and domain registration
+   - Software licenses for course creation tools
+   - Cloud storage for educational materials
+
+2. Community Building, Marketing and Outreach: $500
+   - Social media ads to attract developers and enthusiasts
+   - Social media management tools for consistent outreach
+   - Design tools for creating promotional materials
+   - Prizes for small community contests to boost engagement
+
+3. Virtual Workshop Expenses: $200
+   - Video conferencing software subscription
+   - Recording and editing software for creating workshop replays
+
+4. Mini-Hackathon Prizes: $600
+   - 1st place: $300
+   - 2nd place: $200
+   - 3rd place: $100
+
+5. :- Miscellaneous administrative expenses $200
+
+
+This breakdown allocates the funds to critical areas that will help establish Stacks Labs' foundation. It prioritizes curriculum development and community building, which is essential for attracting and retaining developers. The budget is lean but covers the necessary elements to launch the project and demonstrate initial traction, which could be leveraged for future funding rounds.","Self-sustainability Plans and Long-term Vision:
+
+1. Introduce premium courses and certification programs for a fee
+2. Offer paid consultation services for Stacks projects seeking developer talent
+3. Host sponsored hackathons and events with corporate partners
+4. Develop or partner with a job placement service with a finder's fee model
+5. Develop custom training programs for companies building on Stacks
+6. Create and sell advanced Clarity lang learning materials and tools
+
+Long-term vision: Establish Stacks Labs as the go-to global hub for Stacks development education and innovation, driving widespread adoption of Stacks technology and nurturing a thriving ecosystem of skilled developers and groundbreaking projects.",N/A,"My background is uniquely suited to create and lead this project due to my extensive experience managing and expanding communities for blockchain startups, DeFi protocols, and Web 2 & 3 projects. Over the years, I have honed a diverse skill set that perfectly aligns with the demands of this project, including:
+
+Proven Track Record in Community Growth: As the Community Growth Lead at Stacks Australia, I spearheaded strategies that significantly increased active participation and member engagement and led to tangible results. I built and nurtured communities from the ground up, as evidenced by my achievements with NEET and Fractal Red on Polygon. I grew the community to over 3,000 and 7,000 engaged members, respectively, a testament to the effectiveness of my strategies. I am the new chapter lead for Stacks Nigeria and an ambassador for GDSP & Github student communities in Nigeria, further demonstrating my ability to drive community growth and engagement.
+
+Strategic Communication and Outreach are key strengths of mine. As the Head of the Communication & Developers Program at Stacks Australia, I not only led comprehensive communication strategies and campaigns to increase awareness and understanding of our offerings among developers and enterprises but also fostered strong relationships with key stakeholders. This has been instrumental in promoting our platforms and technologies, ensuring always clear and effective communication. This skill will undoubtedly be an asset in this leadership role, enabling me to effectively communicate and collaborate with all stakeholders involved in this project.
+
+Content Creation and Management: As a former Content Manager at StackingDAO, I crafted and implemented content strategies that boosted brand awareness and audience engagement across multiple platforms. My consistent delivery of high-quality content has ensured brand consistency and enhanced our online presence.
+
+Cross-functional Collaboration: Throughout my career, I have collaborated cross-functionally to align community initiatives with product roadmaps, marketing campaigns, and customer support. This integrated approach has driven adoption and ensured community feedback directly informs product development.
+
+Leadership in IT, Digital Marketing, and Social Media: My IT, Digital Marketing, and SEO certifications from Google and LinkedIn have equipped me with the skills to run effective digital marketing campaigns and structure the right community experience needed for a tech community. I have successfully managed social media growth and engagement strategies, as demonstrated by the significant increase in Twitter and LinkedIn followings for various projects.
+
+Innovative Community Engagement is not just a skill but a passion of mine. My roles have included creating and hosting engaging content, events, and Twitter Spaces that facilitate community interaction and growth and bring excitement and innovation. My ability to identify and leverage key influencers has driven awareness and fostered a strong sense of community, making every interaction a unique and engaging experience. I'm eager to bring this innovative approach to community engagement to this leadership role, as it will inspire and engage the community uniquely and excitingly. This passion will be a driving force in the success of this project.
+
+By combining these experiences and skills, I am well-equipped to lead this project to success, ensuring robust community engagement, strategic communication, and sustained growth.","Project Challenges and Risk Mitigation:
+1. Challenge: Attracting and retaining skilled Clarity developers
+   Mitigation: Offer unique value through personalized mentorship and job placement assistance
+
+2. Challenge: Maintaining consistent content quality
+   Mitigation: Implement a peer review system and regular curriculum updates.
+                    Establish partnerships with Stacks projects for real-time industry insights.
+
+3. Challenge: Limited initial funding
+   Mitigation: Prioritize core activities, leverage volunteer contributions, and seek partnerships.
+
+4. Challenge: Scaling community management
+   Mitigation: Implement automated moderation tools and train community volunteers.
+
+5. Risk: Overreliance on a single project leader
+   Mitigation: Gradually build a core team of volunteers and part-time contributors
+
+Obstacles and Implementation Barriers:
+1. Limited awareness of the Stacks ecosystem among developers
+   Solution: Targeted outreach and educational content about Stacks' advantages.
+
+2. Potential changes in Stacks protocol or Clarity language
+   Solution: Maintain close communication with Stacks Foundation for early updates.
+
+3. Difficulty in measuring the real-world impact of education
+   Solution: Implement a tracking system for graduate employment and project launches.
+
+4. No significant SIP approvals or marketplace changes are required for implementation.
+
+Market Competition and Impact:
+1. Other blockchain education platforms (e.g., Solana, Ethereum, etc.)
+   Impact: May draw potential learners away from Stacks-specific education
+   Mitigation: Highlight unique benefits of Stacks and Bitcoin integration
+
+2. Traditional coding boot camps expanding into blockchain
+   Impact: Could offer more recognized certifications
+   Mitigation: Partner with Stacks projects for exclusive opportunities and real-world application
+
+3. Existing competition: General blockchain education platforms (e.g., Coursera, Udacity)
+   Impact: These platforms have a broader reach but lack Stack-specific focus.
+Mitigation - i.  Develop and highlight a curriculum focusing exclusively on Stacks and Clarity, offering depth that generalist platforms can't match.
+ii. Establish direct relationships with Stacks-based projects and companies, offering a clearer path to employment than generalist platforms.",,"Sam, Gordon","Head of Communications & Developers program - Stacks Australia
+CM & Advocate - Stacks
+Chapter Lead - Stacks Nigeria
+Discord Manager & Ambassador - Ryder
+Former Content Manager - Stacking DAO
+Community Growth Lead - Nothing Token
+Community Support - Alex DEX
+Ambassador - Velar & Stacking DAO",https://x.com/TheLiberalThumb,https://app.console.xyz/u/sam,@theliberalthumb,https://github.com/cliqueengagements,sam@stxaus.com,"Gordon@1770
+Hero Gamer
+Electrafrost.btc
+Nietta",No,Yes,Yes,Yes,Yes,Yes,Yes,,7.60,8,7,,9,8,6,,,,,,,,,No,,,No,Yes,,
+6/28/2024 19:50:08,gary@bklyn.co,Zero to Clarity ,"Mentorship Program: ""Community-Driven Request"" - You are making a request driven by the community to find mentees.",Helping new Clarity entrepreneurs and developers launch their first smart contract,Many entrepreneurs come to the community with ideas for their product but are reluctant to start playing with smart contracts because they may be intimated or don't know where to begin. I aim to serve as a mentor who provides them with a starting point to launch their first smart contract by reviewing the key elements and getting them started on a path to success. Launching a smart contract will give them the confidence they need to test their product with the market and take their idea to the next level. ,,"We hear newcomers to Stacks on Spaces all the time who have an idea but don't have a go place to get them off the ground. specifically as it relates to Smart Contract Engineering. I can help vet the viability of their idea as it compares to what's possible given Clarity's expressive nature and security constraints. I can provide them with a template contract that could work for their specific case and get them started on the right track. I can put together a group of other engineers who will be part of this support effort so that no-one feels discouraged from getting their smart contract off the ground and on testnet/mainnet. We will use Stacks Sandbox, Hiro Tools and Clarinet testing features to maximize speed to market. We can put together a supportive environment for early stage entrepreneurs and Clarity devs. ","1. Find a suitable mentee and help them draft their first smart contract, then launch it on Nakamoto TESTNET. 2. Join DeGrant spaces to discuss what is possible when it comes to specific ideas for incoming entrepreneurs and developers who want to get involved in Stacks and Clarity. 3. Support any other mentor/mentee-based development priorities that may come up by DeGrants or the larger community. ",2500,"$1,575",1. Time to provide mentorship/support 2. Research time to Clarity-based inquiries as needed 3. One on one coaching support 4. Fees to launch contracts on MainNet (if necessary). ,I am part of the DeGrants community and continue to support Stacks entrepreneurs. Many who don't have the resources available to develop products on their own. I would continue to do this regardless of whether this project is going to get a grand award or not. The DeGrant just incentivizes me to do it in a more organized way that can potentially lead to other supportive roles that can help grow the Stacks ecosystem. I've been part of Stacks since 2018 and I don't plan on leaving any time soon. ,"Yes, all smart contracts are open-source. I think it would also be helpful to record sessions with mentees so that we can repurpose them. This would be subject to the mentees approval but shouldn't be an issue. All advice/ideas provided in spaces is recorded and made public. ",I am a long term member of the community. I've been a part of HeyLayer which is one of the first NFT marketplaces on stacks. I support existing entrepreneurs on Stacks including Sandy Hoover (mixmi) and ZeroAuthority (Cerulean Marketplace Badges). ,"I think the main challenge is tied to time availability but the financial incentive mitigates that. Other obstacles include a potentially overly-complex smart contract scenario/request which shouldn't be a major issue as we have a lot of extremely talented Clarity engineers who I can contact if I was really stuck on something specific. For example, I'm already part of the Clarity working group every Monday Morning and so I can go in and ask for assistance if needed. ",,Gary Riger,"HeyLayer, Stacks Accelerator Cohort 1, Mixmi, Cerulean Marketplace",https://x.com/garyriger,https://app.console.xyz/u/garyriger.btc,garyriger,https://github.com/grigerny/,gary@bklyn.co,"Sandy Hoover, HeroGamer, ZeroAuthority",Stacks - Yes we received a grant under HeyLayer to develop a product for the Stacks Foundation. It was in 2021 for a platform to raise money for causes. ,Yes,Yes,Yes,Yes,Yes,Yes,,7.17,7,7,8,7,8,6,,,,Love it ! I will love to see how we can collaborate ,,,,,No,,,No,Yes,,
+6/28/2024 16:47:26,thiskittyisgood@gmail.com,Stacks Community Lead,Community Building,"Build and foster a vibrant and engaged Stacks community through strategic engagement, educational initiatives, and innovative programs.","I’m proposing that over the next three months, I dedicate an average of 10 hours a week to co-ordinate building and maintaining an initial four key programs under the Stacks Community Rewards and Recognition umbrella for Community Building, Educating, and Retention.
+ 
+Key to this would be that each track continues to hold its weekly X spaces, for building the stacks community interest and engagement.
+ 
+The four key rewards and recognition pillars are
+ 
+1.            Ambassador Program
+ 
+What:
+Six dedicated ambassadors, one for each track,  to promote activities and updates within the ecosystem, and provide additional support to the DeGrants stewards
+
+Recognition:  
+Zero Auth Badge
+Weekly twitter thread 
+
+Rewards:
+Stacks Merch
+Meme coins, NFTs
+ 
+2.            Stacks Proof of Work Awards:
+ 
+What:
+Quarterly awards to recognize impactful projects and individuals within each track and in the community
+ 
+Recognition:
+Zero Auth Badge
+Quarterly Awards on Console Live Events
+Monthly twitter thread highlighting the recipients and what they are up to
+ 
+Rewards:
+The Proof of Work award recipients will receive bi-monthly rewards from an amount stacked on our behalf by the Stacks foundation, so that they receive BTC every 2 weeks for the 3 months that they hold the POW award
+ 
+3.            Tacovation: (Lead by Nietta)
+ 
+What:
+Weekly Taco awards for community members in each track
+ 
+Recognition:
+Zero Auth Badge
+Weekly Taco Awards on track specific Twitter Spaces
+ 
+Rewards:
+Taco NFTs
+ 
+ 
+4.            DeGrants (In conjuntion with the other Track Stewards)
+
+For cohort 3 and beyond",,"Project Focus and Impact:
+To create a unified and active community within the Stacks ecosystem with a focus on the DeGrants program as the primary onboarding initiative. Quantitative outcomes include increased participation, engagement and growth. Qualitative outcomes include creating a sense of belonging and collaboration among community members, both old and new.
+
+Target Audience and Strategy:
+The target audience includes builders, DeFi enthusiasts, NFT creators, BNS users, from within the general Stacks community, the broader crypto community and the crypto curious. Strategies include hosting regular spaces, facilitating educational content, rewarding community and leveraging social media for reach and engagement.
+
+Project Activities and Outputs:
+DeGrants support
+Community Engagement Events
+Community collaboration
+Educational Initiatives
+Creative Projects
+Recognition Programs","Ongoing 
+Community engagement strategies
+Recognition and rewards programs
+Stacks Ambassador Program
+",$860,,"$860 each per track x 6 track = Total $5160 - Time-based renumeration $40 per hour - 10 hours per week - 43 hours per month - $1720 per month x 3 months (July, Aug, Sept) = $5160 (6 tracks $860 per track total)",Community decision based on the success of the role,n/a,"With extensive experience in community engagement and content creation within the Stacks ecosystem, I am uniquely suited for this role. My background in managing community-driven initiatives and fostering collaboration makes me an ideal candidate to lead this project and ensure its success.","Project Challenges and Risk Mitigation:
+Community Fragmentation: Addressed by regular events and engagement activities.
+Financial Constraints: Managed through careful budget allocation 
+
+Obstacles and Implementation Barriers:
+Marketplace Dynamics: Monitor changes and adapt strategies accordingly.
+
+Market Competition and Impact:
+Existing platforms might offer similar engagement strategies, but this project’s focus on holistic community building and innovative recognition programs sets it apart, fostering a more cohesive and active Stacks community.",,GoodKitty,"Bitcoin Art Collective, Stacks Music Project, Art on Stacks Tues 2pmET, GK Insights, Stacks DeGrants NFT Lead, Gamma Partner Curator",https://x.com/thiskittyisgood,https://app.console.xyz/u/goodkitty,goodkitty.btc,,thiskittyisgood@gmail.com,"Hero Gamer, Haddy, Gordon, Davek",yes.  cohort 1 for the stacks music project (stacks mixtapes) https://www.goodkitty.xyz/stacks-music-project - the album has been recorded and all artwork completed - release date pushed out due to nakamoto upgrade delay.  ,Yes,Yes,Yes,Yes,Yes,Yes,,6.67,8,5,6,7,6,8,,,,Lovely,,,,,No,,,,,,
+6/29/2024 8:45:21,david@aibcs.xyz,Nestai.ai: Interactive Blockchain Education and Social Intelligence,Developer Tooling,"Empowering learners with AI-enabled avatars, blockchain education, and gamified social intelligence tools.","Nestai.ai revolutionizes blockchain education with AI-enabled avatars guiding users through each module of our comprehensive curriculum and allowing them to mint their ‘diploma’ as an NFT upon completing all 12 courses. Our platform offers interactive blockchain education, social intelligence data via LunarCrush, real-time Stacks event calendars, live Twitter Spaces integration, BNS integration, and a Stacking DAO DeFi and points calculator. Additionally, we are developing a ‘TAP APP’ to attract users from Telegram and the TON blockchain. Gamified social intelligence tools let users compete for social media supremacy.","Imagine mastering blockchain technology effortlessly. Nestai.ai is your gateway, using AI avatars to guide you through interactive courses, awarding you an NFT diploma upon completion. You’ll get real-time social insights, Stacks event updates, and seamless integration with live Twitter Spaces and BNS. Plus, our DeFi calculators and gamified social tools make learning competitive and fun. We’re even launching a ‘TAP APP’ to onboard users from Telegram and the TON blockchain. Join us, and dominate the blockchain space!","
+Main Areas of Impact:
+
+        •        DeFi Calculators: Empower users to make well-informed investment decisions by providing precise, actionable data. This tool aims to enhance financial literacy and decision-making within the DeFi space.
+        •        AI-Enabled Avatars: Revolutionize education by offering interactive and personalized learning experiences. The avatars will make complex concepts more accessible and engaging.
+        •        Social Insights Dashboard: Encourage user engagement and community building through gamification. Users can track their social media performance, fostering a competitive yet collaborative environment.
+        •        Real-Time Twitter Spaces Integration: Facilitate real-time engagement and participation in relevant discussions. This feature aims to enhance community involvement and knowledge sharing.
+
+Importance for the Stacks Community:
+
+        •        These features collectively support the growth and dynamism of the Stacks ecosystem by providing tools that enhance financial decisions, educational experiences, social interactions, and community engagement.
+
+Target Groups and Strategies:
+
+        •        DeFi Enthusiasts: By offering sophisticated calculators, this tool will attract users interested in optimizing their investments.
+        •        Learners and Educators: AI-enabled avatars will appeal to individuals seeking innovative educational methods and institutions looking to integrate advanced teaching tools.
+        •        Social Media Influencers and Users: The social insights dashboard will engage users focused on expanding their digital footprint and influence.
+        •        Stacks and Bitcoin Community Members: The Twitter spaces integration will draw in active participants in the crypto discussions, fostering a more connected and informed community.
+
+Activities Supported by Project Funding:
+
+        •        Development and Testing: Funds will support the continuous development and rigorous testing of each feature to ensure functionality and user satisfaction.
+        •        User Onboarding and Support: Resources will be allocated to creating comprehensive onboarding guides and support systems to assist new users.
+        •        Marketing and Community Engagement: Funds will be used to promote the platform and engage with the community through various channels.
+
+Expected Outputs and Broader Impact:
+
+        •        Outputs: A functional platform with all features operational, a growing user base, and active participation in Twitter spaces.
+        •        Broader Impact: Enhanced financial literacy, improved educational experiences, increased social media engagement, and a more connected Stacks community.","Project Timelines, Milestones, and Deliverable Metrics
+
+        Milestone 1: Development and launch of DeFi Calculators and Real-Time Twitter Spaces Integration.
+
+        •        Timeline: Within the first 30 - 45 days.
+        •        Metrics: User adoption rates, feedback scores, and engagement levels.
+        •        STX Distribution: Upon approval.
+
+        Milestone 2: Launch of the Social Insights Dashboard.
+
+        •        Timeline: Within 45 - 60 days.
+        •        Metrics: Number of active users, social media interaction metrics, and participation in Twitter spaces.
+        •        STX Distribution: Upon approval.
+
+        Milestone 3: Development and launch of AI-Enabled Avatars.
+
+        •        Timeline: Within 60 - 90 days.
+        •        Metrics: User interaction levels, educational outcomes, and satisfaction ratings.
+        •        STX Distribution: Upon approval.
+
+Funding Details
+
+        •        Applying to multiple DeGrants tracks: (Community, DeFi, Developer, NFT & BNS) to seek partial funding between $1,000 and $1,500 from each track.
+        •        Overall project cost: Estimated at $6,500
+
+Project Delivery
+
+        •        MVP Delivery Timeline: Aim to deliver the Minimum Viable Product (MVP) within 30 to 45 days if the necessary funding is secured.
+        •        Funding Utilization: The funding will subsidize costs already incurred and support ongoing development efforts.",1500,,"Budget Breakdown - Community Focused:
+
+AI Enablement and Testing: $1,000
+
+        •        Developer Team Compensation: The majority of the budget will be used to compensate the developer team for their work on building and testing the platform. This includes salaries, contractor fees, and any additional costs associated with hiring skilled developers.
+        •        Feature Development:
+        •        DeFi Calculators: Creation of sophisticated calculators that provide users with comprehensive data to assist in making optimal investment decisions. This includes integrating StackingDAO points data to offer accurate standings and platform recommendations (Zest Protocol, Bitflow Finance, Archideco Finance, Hermetica).
+        •        AI-Enabled Avatars: Development of interactive, lifelike avatars that provide educational modules and engage in real-time conversations with users.
+        •        Social Insights Dashboard: Integration with the Lunar Crush platform to offer users a snapshot of their social media presence, gamified with leaderboards and competitions.
+        •        Real-Time Twitter Spaces Integration: Implementation of features that display current Stacks and Bitcoin Twitter spaces, allowing users to join directly from the website and request addition to the content spaces calendar.
+        •        Testing and Quality Assurance: Rigorous testing processes to ensure that all features are functioning correctly and providing a seamless user experience. This includes bug fixing, performance optimization, and user feedback incorporation.
+
+Funding Justification:
+
+I have already begun paying a developer team to build this platform, which involves a significant personal financial investment. The requested funds from the DeGrants program will help subsidize these costs, ensuring the project can continue to move forward without financial strain. This investment will cover the development, testing, and deployment of the platform’s core features, allowing us to deliver a high-quality, user-friendly product to the Stacks community.
+
+GitHub Repository:
+
+I will be sending the stewards a link to my GitHub repository separately, as I have received prior approval to not open source this just yet and not share my repo publicly. ","Self-Sustainability Plans:
+
+To ensure the project’s continuity beyond the DeGrants program, we have developed several self-sustainability strategies:
+
+	•	Subscription Model: Implementing a tiered subscription model for advanced features and premium access. Users can opt for different levels of service based on their needs, providing a steady revenue stream.
+	•	Advertising Revenue: Selling ad space on the website to generate additional income. This will include banner ads, sponsored content, and other advertising opportunities tailored to our user base.
+	•	Sponsorships and Naming Rights: Selling naming rights to each module. For instance, the DeFi module will be sponsored by Bitflow Finance. I have already spoken to Dylan, who has expressed his willingness to support the project in this manner. This approach will not only provide financial support but also build strong partnerships within the Stacks ecosystem.
+	•	Partnerships: Establishing collaborations with other projects within the Stacks ecosystem, such as StackingDAO, Lunar Crush, Zero Authority DAO for reputation badges, and Hash Havoc, to share resources and benefits. These partnerships will help integrate additional features and services, enhancing the platform’s value.
+
+Long-Term Vision:
+The long-term vision is to create a comprehensive, user-friendly platform that serves the Stacks community by providing valuable tools and insights for DeFi investments, education, and social engagement. We aim to continuously improve and expand the platform based on user feedback and evolving market needs. By fostering strong community relationships and securing sustainable revenue streams, we intend to ensure the platform’s longevity and impact within the Stacks ecosystem.",No,"With a strong background in blockchain technology, DeFi, and community engagement, I bring a unique blend of expertise and passion to this project. My experience includes:
+
+	•	Extensive Knowledge in Blockchain Technology and DeFi: I have been actively involved in the blockchain space for several years, gaining deep insights into the workings of decentralized finance and the broader crypto ecosystem. This knowledge equips me to understand the technical nuances and user needs essential for developing a successful platform.
+	•	Proven Track Record in Community Engagement: As the host of multiple shows and spaces within the Stacks ecosystem, such as “All Things Crypto” and “Behind the Stacks,” I have built strong relationships and a solid reputation within the community. This engagement has provided me with invaluable feedback and a clear understanding of the community’s needs and preferences.
+	•	Leadership and Project Management Skills: My role in managing and coordinating various projects has honed my skills in leadership and project management. I am adept at setting clear goals, maintaining timelines, and ensuring quality delivery, all of which are crucial for the successful execution of this project.
+	•	Collaboration with Key Ecosystem Players: I have established collaborations with significant projects within the Stacks ecosystem, such as StackingDAO, Lunar Crush, and Bitflow Finance. These partnerships not only enhance the platform’s value but also demonstrate my ability to work effectively with other stakeholders to achieve common goals.
+	•	Personal Investment and Commitment: I have already invested substantial personal funds into the development of this project, demonstrating my commitment and belief in its potential. This investment underscores my dedication to seeing the project succeed and delivering value to the Stacks community.
+
+Together, these aspects of my background make me uniquely suited to lead and develop this project, ensuring it meets the high standards and expectations of the Stacks community.","Challenges, Barriers, Risks, and Competition:
+
+	•	Project Challenges and Risk Mitigation:
+	•	Technical Challenges: Developing and integrating sophisticated features like DeFi calculators and AI-enabled avatars. Mitigation strategies include hiring experienced developers and conducting thorough testing.
+	•	Financial Risks: Ensuring sufficient funding to complete and sustain the project. Mitigation involves securing multiple funding sources and maintaining a detailed budget.
+	•	Operational Risks: Managing project timelines and deliverables. This will be addressed by setting clear milestones and regular progress reviews.
+	•	Obstacles and Implementation Barriers:
+	•	Integration with External Platforms: Collaborating with StackingDAO and Lunar Crush requires seamless integration of their data feeds. This will be managed through close collaboration and technical support from these partners.
+	•	Market Adaptation: Adapting to changes in the market and user preferences. Ongoing user feedback and agile development practices will help navigate these changes.
+	•	Market Competition and Impact:
+	•	Existing Competition: There are other platforms providing DeFi tools and social insights, but none offer the comprehensive and integrated approach of this project. The unique combination of features and the focus on collaboration within the Stacks ecosystem provides a competitive advantage.
+	•	Impact: The presence of competitors validates the market need and provides opportunities for differentiation. This project aims to offer superior user experience, integration, and community collaboration, setting it apart from others.","Strategic Funding Request
+
+We are requesting a small amount of funding from each track ($1,000 per track, with $1,500 for Developers and Builders) in hopes of appealing to each track leader to contribute a small fraction of their budget. Despite the modest size of these contributions, when combined, they can have an immense impact on the project. By securing partial funding from multiple tracks, we can ensure comprehensive support for the development and integration of our platform’s features, ultimately benefiting the entire Stacks ecosystem.
+
+Detailed Budget Breakdown
+
+If each track approves the amount requested, here is the detailed breakdown of the total budget:
+
+	1.	Developers and Builders
+	•	Amount Requested: $1,500
+	•	Allocation:
+	•	Developer Salaries: $1,000
+	•	Testing and QA: $500
+	2.	DeFi
+	•	Amount Requested: $1,000
+	•	Allocation:
+	•	DeFi Calculators Development: $600
+	•	Integration with StackingDAO: $400
+	3.	NFTs
+	•	Amount Requested: $1,000
+	•	Allocation:
+	•	AI-Enabled Avatars Development: $700
+	•	Educational Content Creation: $300
+	4.	BNS (Bitcoin Name System)
+	•	Amount Requested: $1,000
+	•	Allocation:
+	•	Real-Time Twitter Spaces Integration: $600
+	•	Social Insights Dashboard: $400
+	5.	Community and Governance
+	•	Amount Requested: $1,000
+	•	Allocation:
+	•	User Onboarding and Support: $600
+	•	Marketing and Community Engagement: $400
+
+Project Timeline and Milestones
+
+We have already provided a detailed project timeline with specific milestones and deliverable metrics. Here is a brief overview:
+
+	•	Milestone 1: Development and launch of DeFi Calculators and Real-Time Twitter Spaces Integration (within the first 30 days)
+	•	Metrics: User adoption rates, feedback scores, and engagement levels.
+	•	Funding Distribution: Upon approval.
+	•	Milestone 2: Launch of the Social Insights Dashboard (within 45 days)
+	•	Metrics: Number of active users, social media interaction metrics, and participation in Twitter spaces.
+	•	Funding Distribution: Upon approval.
+	•	Milestone 3: Development and launch of AI-Enabled Avatars (within 60 days)
+	•	Metrics: User interaction levels, educational outcomes, and satisfaction ratings.
+	•	Funding Distribution: Upon approval.
+
+Technical Specifications
+
+To ensure transparency and trust, we will provide the Lead Stewards with access to our GitHub repository, entrusting them with the technical specifications of our project. This access will include detailed documentation on the technical requirements and specifications for the DeFi calculators, AI-enabled avatars, and other features.",David Choukroun,"Spaces Host, 100 Days of Giveaways",https://x.com/DCBK2LA,https://app.console.xyz/u/dave-stx,dcbk2la,https://github.com/KidCudi718?tab=repositories (not my actual repo as stated on prior page),david.choukroun2@gmail.com,@Stacksybtc @Stacks (I've been working with Rick for some time now as he was the one who approached me about launching Behind the STX) @SirLatimer1 ,No,Yes,Yes,Yes,Yes,Yes,Yes,,6.33,7,5,7,5,7,7,,,,Love the concept and will love to see how we can collaborate ,,,,,Yes,,,,,,
+6/27/2024 22:45:44,rossragsdale@gmail.com,Charisma - Community Run DAO,"Mentorship Program: ""Community-Driven Request"" - You are making a request driven by the community to find mentees.","The first true DAO on Stacks, one where code is law, and governance and votes matter.","Our project addresses the complexities and inefficiencies in the DeFi ecosystem, particularly for users managing liquid staking tokens, rebase tokens, and index tokens. Users often face challenges in tracking their diverse assets and maximizing their yields through strategic arbitrage. Our solution is a comprehensive DeFi dashboard that integrates these elements seamlessly.  Problems Solved: Complex Asset Management: Users struggle to monitor and manage various token types, including their interrelationships. Arbitrage Opportunities: Identifying and executing profitable arbitrage trades is difficult without sophisticated tools. For Whom: DeFi enthusiasts and investors who hold liquid staking tokens, rebase tokens, and index tokens. Users looking to optimize their portfolio performance and capitalize on arbitrage opportunities.",,"Project Focus and Impact
+Our project's main areas of impact include improving asset management efficiency, enhancing yield optimization, and fostering greater engagement within the DeFi ecosystem. Quantitatively, we aim to reduce the time users spend on asset management by 50% and increase arbitrage profitability by 30%. Qualitatively, our platform will provide users with a deeper understanding of their portfolio performance, resulting in more informed decision-making and greater satisfaction. This project is crucial for the Stacks community as it will attract more users to the platform, drive innovation, and showcase the potential of DeFi applications built on Stacks.
+
+Target Audience and Strategy
+Our primary target audience includes DeFi enthusiasts, investors, and traders within the Stacks ecosystem. We also aim to engage new users who are interested in exploring DeFi but are currently deterred by its complexity. Our strategy involves:
+
+User Education: Providing comprehensive guides and tutorials to help users understand the benefits and functionalities of our platform.
+Community Engagement: Collaborating with key influencers and hosting webinars to demonstrate the platform’s features.
+Incentive Programs: Launching targeted airdrop campaigns and rewards for early adopters to drive initial engagement and adoption.
+Project Activities and Outputs
+Activities:
+
+Development and Testing: Building and rigorously testing the dashboard to ensure a seamless user experience.
+User Onboarding: Creating educational content and user guides to facilitate easy adoption.
+Community Outreach: Hosting webinars, AMA sessions, and collaborating with influencers to spread awareness.
+Expected Outputs:
+
+Comprehensive DeFi Dashboard: A fully functional, user-friendly platform for managing and optimizing DeFi assets.
+Educational Resources: A suite of tutorials and guides that empower users to maximize the platform’s potential.
+Engaged Community: A robust user base actively participating in the Stacks ecosystem, driving further innovation and adoption.
+Broader Impact:
+For developers, our project will serve as a case study in creating user-centric DeFi applications, showcasing best practices in UX/UI design and blockchain integration. For non-developers, the platform will simplify DeFi participation, making advanced financial strategies accessible to a broader audience, ultimately driving mainstream adoption of the Stacks ecosystem.","Project Timelines, Milestones, and Deliverable Metrics
+Milestone 1: Platform Development and Initial Launch
+
+Timeline: Months 1-3
+Objectives:
+Development of Core Features:
+Build and integrate the DeFi dashboard's primary features, including the visualization of token relationships, portfolio tracking, and basic arbitrage tools.
+Alpha Testing:
+Conduct alpha testing with a select group of users to identify and fix bugs.
+User Onboarding Resources:
+Create comprehensive guides and tutorials for new users.
+Deliverable Metrics:
+Functional dashboard with at least 80% of core features implemented.
+Successful completion of alpha testing with feedback incorporated.
+At least 3 detailed user guides or tutorials published.
+STX Distribution: 50% upon successful completion and verification of milestone deliverables.
+Milestone 2: Full Platform Launch and Community Engagement
+
+Timeline: Months 4-6
+Objectives:
+Feature Completion and Optimization:
+Finalize all dashboard features, including advanced arbitrage tools and enhanced user interface.
+Beta Testing and User Feedback:
+Open the platform to a broader beta testing phase, gather extensive user feedback, and make necessary adjustments.
+Community Outreach and Growth:
+Execute a comprehensive marketing campaign, including webinars, AMAs, and collaboration with influencers.
+Incentive Programs:
+Launch targeted airdrop campaigns and rewards for early adopters.
+Deliverable Metrics:
+Fully functional and optimized DeFi dashboard with 100% of planned features.
+Positive feedback from at least 70% of beta testers.
+Minimum of 2 webinars and 3 AMA sessions conducted.
+At least 1,000 active users onboarded and using the platform.
+STX Distribution: 50% upon successful completion and verification of milestone deliverables.
+Detailed Timeline
+Month 1:
+Kickoff meeting and project setup.
+Initial development of core features (token visualization, portfolio tracking).
+Begin creating user guides and tutorials.
+Month 2:
+Continue development of core features.
+Start alpha testing with a select group of users.
+Begin work on advanced arbitrage tools.
+Month 3:
+Complete core feature development.
+Incorporate alpha testing feedback.
+Publish initial user guides and tutorials.
+Prepare for Milestone 1 review and verification.
+Month 4:
+Launch full feature development and optimization.
+Begin beta testing with a larger user group.
+Conduct the first webinar and AMA session.
+Plan and initiate marketing campaign.
+Month 5:
+Continue beta testing and gather user feedback.
+Finalize all platform features.
+Execute targeted airdrop campaigns.
+Conduct additional webinars and AMA sessions.
+Month 6:
+Complete all optimization and feature enhancements.
+Ensure positive feedback from beta testers.
+Achieve target user onboarding numbers.
+Prepare for Milestone 2 review and verification.
+This timeline and set of milestones ensure that the project progresses in a structured manner, with clear deliverables and metrics to verify achievement at each stage.",5000,,"Summary
+Development Costs: $2000
+Testing and QA: $800
+Marketing and Community Engagement: $1200
+User Incentives: $600
+Operational Costs: $400
+Total Requested Funding: $5000
+
+This budget ensures that we have the necessary resources to develop, test, and launch the platform effectively, while also engaging the community and incentivizing user participation.","Self-Sustainability Plans
+Monetization Strategies
+Subscription Model:
+
+Premium Features: Offer advanced features such as enhanced arbitrage tools, detailed analytics, and premium support as part of a subscription package.
+Freemium Model: Provide basic features for free to attract a wide user base, with the option to upgrade for premium services.
+Transaction Fees:
+
+Service Fees: Charge a small fee on transactions facilitated through our platform, such as adding liquidity or executing arbitrage trades.
+Affiliate Partnerships: Partner with other DeFi projects and earn commissions on referrals or integrated services.
+Token Economics:
+
+Native Token Launch: Introduce a native token that can be used for platform transactions, staking, and rewards.
+Staking and Rewards: Encourage long-term engagement by offering staking rewards and incentives for token holders.",Yes,"Why I Am the Right Person to Make This Project
+Expertise in DeFi and Blockchain Technology
+I possess extensive experience in the DeFi and blockchain space, having actively participated in the ecosystem as both a developer and investor. My deep understanding of blockchain protocols, smart contracts, and decentralized finance principles equips me with the technical and strategic acumen necessary to create a robust and user-friendly DeFi dashboard.
+
+Technical Skills
+As a seasoned Full-Stack Web Developer, I am proficient in a variety of programming languages and frameworks that are essential for building this project. My expertise includes:
+
+Frontend Development: Proficient in JavaScript, TypeScript, and React, ensuring a seamless and intuitive user interface.
+Backend Development: Skilled in Node.js and Nest.js, enabling the creation of a reliable and scalable backend.
+Blockchain Integration: Experience with integrating blockchain technologies and smart contracts, particularly on the Stacks network.
+Track Record of Successful Projects
+I have a proven track record of delivering successful projects in the tech industry. My portfolio includes multiple high-impact applications that have received positive feedback for their functionality and user experience. This demonstrates my ability to not only develop but also to deploy and maintain complex systems.
+
+Passion for Innovation and User Experience
+My passion for innovation drives me to continuously seek out and implement the latest advancements in technology. I prioritize user experience and design, ensuring that the products I create are both powerful and accessible. This project is an extension of my commitment to making DeFi more approachable and beneficial for all users.
+
+Community Engagement
+I am actively involved in the Stacks and broader blockchain communities. This engagement keeps me informed about the latest trends, user needs, and potential collaboration opportunities. My network within the community can be leveraged to promote the project, gather feedback, and foster partnerships that enhance the platform's value.
+
+Conclusion
+My unique combination of technical expertise, proven success in project development, deep understanding of DeFi, and active community involvement makes me the ideal candidate to lead this project. I am dedicated to creating a platform that not only meets but exceeds the expectations of users within the Stacks ecosystem and beyond.","Project Challenges and Risk Mitigation
+Key Challenges and Risks
+Technical Challenges:
+
+Complex Integration: Integrating various DeFi protocols and ensuring seamless interaction between different token types (normal, rebase, and index tokens) can be complex.
+Scalability Issues: As the platform grows, ensuring it can handle increased user load and transaction volume is critical.
+Financial Challenges:
+
+Funding Limitations: Adequate funding is necessary to support development, marketing, and ongoing operations.
+Revenue Generation: Developing a sustainable business model to generate consistent revenue post-launch.
+Operational Challenges:
+
+User Adoption: Convincing users to adopt a new platform in a competitive market.
+Security Concerns: Ensuring the platform is secure from hacks and exploits.
+Risk Mitigation Strategies
+Technical Mitigation:
+
+Robust Development Practices: Implement rigorous testing and continuous integration to catch issues early.
+Scalability Planning: Design the platform architecture with scalability in mind, using modular components and cloud services to handle growth.
+Financial Mitigation:
+
+Budget Management: Carefully manage the budget and prioritize essential features and marketing efforts.
+Diverse Revenue Streams: Implement multiple revenue streams such as subscription models, transaction fees, and partnerships.
+Operational Mitigation:
+
+Marketing and Outreach: Develop a comprehensive marketing strategy to build awareness and drive user adoption.
+Security Measures: Implement industry-standard security practices and conduct regular audits to ensure the platform's integrity.
+Obstacles and Implementation Barriers
+SIP Approval:
+
+Dependency on SIPs: The project may require certain Stacks Improvement Proposals (SIPs) to be approved and implemented to enable specific functionalities.
+Mitigation: Engage with the Stacks community early and actively participate in the SIP process to advocate for necessary changes.
+Market Dynamics:
+
+Marketplace Operations: Changes in how DeFi marketplaces operate could impact the project’s functionality.
+Mitigation: Maintain flexibility in the platform design to adapt to changes in marketplace operations and regulations.
+Market Competition and Impact
+Existing Competition
+Current DeFi Dashboards:
+There are several established DeFi dashboards and portfolio management tools available in the market.
+Competitors: Platforms like Zapper, Zerion, and DeBank offer similar services.
+Competitive Impact and Strategy
+Differentiation:
+
+Unique Features: Our platform's focus on visualizing token relationships and offering advanced arbitrage tools sets it apart from existing solutions.
+User Experience: Prioritize an intuitive and user-friendly interface to attract users who may find other platforms too complex.
+Community Engagement:
+
+Active Involvement: Engage deeply with the Stacks community to build a loyal user base and receive feedback for continuous improvement.
+Educational Content: Provide comprehensive guides and resources to help users understand and maximize the platform’s potential.
+Strategic Partnerships:
+
+Collaborations: Form strategic partnerships with other DeFi projects and exchanges to enhance platform capabilities and reach a wider audience.
+Conclusion
+While there are significant challenges and risks associated with the project, we have developed comprehensive strategies to mitigate these risks. By focusing on technical robustness, financial sustainability, and operational excellence, we are well-positioned to overcome obstacles and achieve long-term success. Our unique value proposition and proactive engagement with the community and stakeholders will help us stand out in a competitive market.",,rozar.btc,Welsh Community Lead,https://x.com/lordrozar,https://app.console.xyz/u/rozar,r0zar,https://github.com/r0zar,rossragsdale@gmail.com,"HeroGamer, Stuart, BitByBit, Stacksy",No,Yes,Yes,Yes,Yes,Yes,Yes,,5.83,8,5,5,7,5,5,,,,Love it but It seems more Defi and community than Dev and I can't find where the mentorship program comes into play ,,,,,No,,,,,,
+6/26/2024 9:24:41,taotao8851@gmail.com,Clarity Wizard,Education,A dedicated Clarity learning platform powered by LLM augmented with all the existing contracts and transactions on the mainnet targeting developers on all levels,"Overview: The Clarity Learning Platform addresses the challenge of accessible and practical blockchain education for developers at all levels.  Problems: Lack of personalized and context-aware learning tools. Limited community support for collaborative learning. Solution: Clarity Learning Platform leverages Large Language Models (LLM) and integrates with mainnet contracts and transactions to provide a dynamic and interactive learning environment. Key features include: Interactive Tutorials: Personalized, step-by-step guides with real-time feedback. AI-Powered Assistance: Instant help, answers, and code suggestions. Target Audience: Beginners: Structured learning pathways. Intermediate Developers: Deepening practical skills. Advanced Developers: Staying updated with the latest trends. Clarity Learning Platform revolutionizes blockchain education by providing a personalized, practical learning experience.",,"Project Focus and Impact: The Platform aims to significantly enhance Clarity education by providing a comprehensive, real-time learning environment for developers. The main areas of impact include:
+Quantitative Outcomes: Increase the number of skilled Clarity developers by 30%. Reduce the time required for new developers to achieve proficiency by 40%.
+Qualitative Outcomes: Improve the quality of blockchain projects by fostering a deeper understanding and hands-on experience. Enhance community collaboration and innovation within the Stacks ecosystem. This project is crucial for the Stacks community as it addresses the gap in accessible, practical blockchain education, thereby fostering growth and innovation.
+Target Audience and Strategy:
+Target Audience: Beginner, intermediate, and advanced smart contract developers.
+Strategy: Use interactive tutorials and mainnet data to provide practical experience. Implement an AI-powered assistant for personalized learning. Ensure smooth learning experience for smart contract developers.
+Project Activities and Outputs:
+Activities: Develop and maintain AI-powered interactive tutorials, integrate live mainnet data.
+Expected Outputs: Launch a fully functional learning platform with interactive tutorials and live data integration. Generate a robust library of resources.
+Broader Impact: Empower developers with the skills needed to innovate and contribute to the Stacks community. Attract new developers to the Stacks ecosystem, thereby enhancing its growth and sustainability.","Milestone 1: Collect and index mainnet contract/transaction data to create knowledge source -Duration: 1 months
+Milestone 2: Design and Build prompt API to interact with knowledge source and LLM  -Duration: 1 months
+Milestone 3: Design and Build web interface to interact with prompt API   -Duration: 1 months",6000,,"5000 for development, 1000 for infrastructure costs",donation from developer community and subscription for paid features,Yes,we are experienced smart contract developers who want to learn clarity so we build this project for ourselves. we also have AI development experiences. the most important one is we believe in stacks ecosystem and want to be part of it.     ,"Project Challenges and Risk Mitigation: Key challenges for the Clarity Learning Platform include:
+Technical Challenges: Integrating live mainnet data and developing an AI-powered assistant that provides accurate, real-time assistance. Mitigation Strategy: we are experienced blockchain developers and AI specialists to ensure robust integration and functionality.
+Market Competition and Impact: Existing competitors in the market include other blockchain education platforms and tools. Their presence may impact user acquisition and retention. However, Clarity's unique integration with live mainnet data, AI-powered assistance, and community-driven approach sets it apart, offering a distinct advantage in providing a comprehensive and interactive learning experience. This differentiation is expected to attract and retain users, driving significant impact within the Stacks community.",,"Tony, Fei, Robin","https://github.com/orgs/subdarkdex
+https://github.com/GetSpeckle/speckle-browser-extension
+https://github.com/deeper-chain/deeper-chain
+https://github.com/FaceWorths/faceworths-tron-smart-contracts 
+",https://x.com/tonyt808,https://app.console.xyz/u/tonyt,tony_taot,"https://github.com/ttaoS, https://github.com/fyang1024, https://github.com/mytechtip",taotao8851@gmail.com,https://x.com/1770(Gordon),no,Yes,Yes,Yes,Yes,Yes,Yes,,5.67,6,5,6,6,6,5,,,,"Great project but it does not expand the details of retention, growth, sustainance and community.",,,,,Yes,,,,,,
+6/25/2024 21:30:12,philip.warthen@gmail.com,Cyber Dragon Labs,AI,"3-sided marketplace for businesses to use text-to-speech models via API, creators to create the base models and provide audio files, and trainers to refine the models. ","Problem: Businesses want custom voice AI models, but are limited to the ones available on large platforms. Even platforms with ""unlimited"" custom voice models, any outside the top 5-10 are low quality because no one is investing to train them better.   Target Customer: Medium to Large companies without the engineering resources needed to dedicate and build custom AI voice models.   Solution: Web3 marketplace for businesses to set bounties for models, and community to build / train those models. Businesses pay the platform with USD to use APIs directly with models, and set bounties for new models to train faster. Creators and trainers are rewarded with CDL tokens. Auditors audit trainer actions to ensure quality.  ",,"Project Focus and Impact
+Cyber Dragon Labs (CDL) aims to enhance the AI voice model industry by creating a decentralized marketplace for training and deploying custom voice models. This will increase the availability and quality of AI models, driving enterprise adoption and fostering AI innovation within the Stacks ecosystem. CDL will deliver numerous high-quality models and transactions, enhancing user engagement and value to enterprise customers.
+
+Target Audience and Strategy
+CDL targets medium to large enterprises and Stacks developers, CDL will engage the community through training incentives, partnerships, educational content, and community events to boost visibility and adoption.
+
+Project Activities and Outputs
+CDL will develop its platform on Stacks, implement a bounty system, and conduct marketing campaigns. The broader impact will be a vibrant Stacks community, enhanced utility, and broader blockchain adoption through innovative AI solutions.","Milestone 1: July 2024
+
+Deliverable: Platform Development and Initial Deployment
+Details: Complete the development of the CDL platform and deploy it on the Stacks zkEVM. This includes setting up the infrastructure, integrating basic functionalities, and launching the initial version.
+Metric: Successful deployment and operation of the CDL platform with initial community engagement.
+
+
+Milestone 2: August 2024
+
+Deliverable: Generation of AI Speech Models
+Details: Generate and deploy 50 AI speech models on the CDL marketplace. Engage the community in training and auditing these models.
+Metric: 50 high-quality AI speech models live on the platform, with active community participation.",4500,,"3000 for development, 1500 for infrastructure costs","Bootstrapping until December, launch a token to support the marketplace in October, generate revenue through partnerships with enterprise customers. ",Yes,"Launched an AI startup focusing on voice. Through customer feedback, the desire for custom AI is enormous. ","Project Challenges and Risk Mitigation
+Cyber Dragon Labs faces technical challenges in integrating AI models with decentralized infrastructure, mitigated by phased deployment, testing, and collaboration with Stacks developers. Financial risks are addressed through diversified funding and budget management. Operationally, community engagement and quality control are ensured with incentives and clear auditing.
+
+Obstacles and Implementation Barriers
+SIP approval and marketplace changes are significant obstacles, mitigated by early engagement with Stacks governance and flexible platform design.
+
+Market Competition and Impact
+Existing AI voice model platforms present competition, but CDL differentiates with community-driven training, rigorous auditing, and seamless Stacks integration to attract users and businesses.",,"Philip Warthen, Christian Hyland",N/A,https://x.com/PhilipWarthen,https://app.console.xyz/u/philip-warthen,cookiestreet,https://github.com/PhilipWarthen,philip.warthen@gmail.com,n/a,No,Yes,Yes,Yes,Yes,Yes,Yes,,5.17,5,5,6,3,7,5,,,,Sounds like its going to need more than degrants and that is worrisome cos it might affect scaling,,,,,Yes,,,,,,
+6/22/2024 9:34:17,ibrahimabdulkarim193@gmail.com,Seeker: Decentralized Job Board on Stacks,Infrastructure,"Building Seeker, an on-chain job board on the Stacks ecosystem, revolutionizing job recruitment with secure, decentralized, and user-friendly features that streamline job posting, searching, and application processes for both employers and job seekers.","Seeker leverages the Stacks ecosystem to revolutionize job recruitment with a decentralized approach. Job seekers often struggle to find relevant opportunities and verify job postings, while employers face challenges in credential verification and data security. Seeker addresses these issues by providing a transparent platform where job listings and applications are securely managed on the blockchain. Job seekers can browse and apply for verified listings, while employers post jobs confidently, knowing data is secure and immutable. Using smart contracts, Seeker ensures secure, verifiable interactions without intermediaries, reducing fraud risks. This decentralized solution offers a user-friendly interface for efficient job hunting and recruitment. By enhancing trust and accessibility, Seeker aims to create a more reliable job market ecosystem on the Stacks blockchain, benefiting both job seekers and employers alike.",,"Project Focus and Impact
+
+Seeker aims to revolutionize job recruitment within the Stacks ecosystem by providing a secure, decentralized job board. The main areas of impact include:
+
+- Quantitative Outcomes: Increased number of verified job postings, reduced time to hire, and higher job matching efficiency.
+- Qualitative Outcomes: Enhanced trust in job listings, improved candidate experience, and streamlined recruitment processes.
+
+This project is vital for the Stacks community as it fosters a reliable, trustless environment for job seekers and employers, enhancing the overall ecosystem's credibility and usability.
+
+Target Audience and Strategy
+
+Seeker targets the following groups within the Stacks community:
+
+- Job Seekers: Individuals looking for trustworthy job opportunities within the blockchain space.
+- Employers: Companies and startups within the Stacks ecosystem seeking qualified candidates.
+
+Our strategy includes:
+
+- Outreach: Leveraging social media, community forums, and partnerships with blockchain influencers to reach job seekers and employers.
+- User Experience: Providing an intuitive and user-friendly interface to ensure seamless interactions.
+- Verification: Using smart contracts for job and candidate verification to maintain trust and security.
+
+Project Activities and Outputs
+
+Funding will support the following activities:
+
+- Development: Building and refining the Seeker platform to ensure it meets user needs and security standards.
+- Marketing: Promoting the platform within the Stacks community to attract users and employers.
+- Support: Offering customer support and community engagement to enhance user satisfaction.
+
+The expected outputs include a fully functional job board platform, a growing user base, and a trustworthy environment for job seekers and employers. This will create a broader impact by improving job matching and fostering trust within the Stacks ecosystem.","Milestone 1: Platform Development
+
+-Duration: 3 months
+- Goals:
+  - Develop core functionalities: job posting, application, and user authentication.
+  - Integrate initial smart contracts for job verification.
+  - Ensure platform responsiveness and usability.
+
+Verification:
+- Operational platform demo.
+- User testing feedback.
+- Smart contract integration tests.
+
+
+Milestone 2: User Acquisition
+Duration:3 months
+Goals:
+  - Achieve 500 registered users (job seekers and employers).
+  - Secure 50 active job postings from verified employers.
+  - Conduct community outreach and engagement activities.
+
+Verification:
+- User registration and activity metrics.
+- Job posting records.
+- Community engagement reports.
+
+Milestone 3: Scaling and Optimization
+
+-Duration: Ongoing
+- Goals:
+  - Scale user base to 1000+ registered users.
+  - Enhance platform features based on user feedback.
+  - Establish strategic partnerships within the Stacks ecosystem.
+
+Verification:
+- User growth metrics.
+- Feature enhancement updates.
+- Partnership agreements.",5000,,"
+1. Development Costs: $2500
+   - Hiring developers for platform development and smart contract integration.
+
+2. Marketing and Outreach: $1000
+   - Promotional activities to attract users and employers.
+
+3. Operational Expenses: $1000
+   - Hosting fees, domain registration, and other operational costs.
+
+4. Community Engagement: $500
+   - Organizing events and activities to build community engagement.
+
+This budget ensures that the funds are used efficiently to develop, promote, and sustain the Seeker platform within the Stacks ecosystem.","Beyond the de-grants program, Seeker aims to achieve self-sustainability through several strategies:
+
+1. Revenue Generation: Implementing premium features for employers and recruiters, such as enhanced job visibility or access to a larger talent pool, will generate revenue.
+   
+2. Tokenization and Incentives: Introducing a utility token within the Seeker ecosystem can incentivize user engagement, reward contributors, and create value for token holders.
+
+3. Partnerships and Collaborations: Collaborating with blockchain projects, educational institutions, and industry partners to expand user base and job opportunities.
+
+4. Community Building: Continuously engaging with the community through events, workshops, and forums to foster a robust ecosystem around Seeker.
+
+5. Scaling and Expansion: Expanding to support additional blockchains and integrating new technologies to cater to a broader audience of job seekers and employers.
+
+The long-term vision is to establish Seeker as the leading decentralized job board, empowering individuals globally to connect with opportunities in the blockchain and decentralized technology sectors.",yes,"My background uniquely qualifies me to lead the Seeker project due to my extensive experience as a full-stack developer with a passion for Web3 technologies. I have firsthand knowledge of the challenges in traditional job markets and a deep understanding of blockchain's potential to revolutionize recruitment processes. My previous projects have honed my skills in decentralized applications and smart contract development, crucial for building Seeker on the Stacks ecosystem. Additionally, my commitment to user-centric design ensures that Seeker will address real-world needs effectively.","Project Challenges and Risk Mitigation:
+Implementing Seeker on the Stacks ecosystem involves technical challenges such as integrating with blockchain infrastructure and ensuring scalability. Financially, securing sustainable funding amidst market volatility is crucial. Operationally, user adoption and regulatory compliance are key concerns. Mitigation strategies include rigorous testing, community engagement for feedback, and diversifying funding sources.
+
+Obstacles and Implementation Barriers:
+Seeker's success hinges on navigating regulatory landscapes and obtaining necessary approvals. Marketplaces' operational changes and the evolution of blockchain technologies are potential barriers. Securing SIP approval and adapting to dynamic market conditions are critical for seamless implementation.
+
+Market Competition and Impact:
+Competitors in blockchain job boards pose challenges by offering similar solutions. Seeker aims to differentiate through user-centric design, decentralized architecture, and leveraging the unique capabilities of the Stacks ecosystem. Competitors' market presence underscores demand, while Seeker's innovative approach can carve a niche by addressing specific pain points in job hunting and recruitment.",,I'm working Solo,Nearscript - Open source project built on Near,https://x.com/iabdulkarim472,https://app.console.xyz/u/ibrahim-abdulkarim,ibrahimabdulkarim,https://github.com/aliveevie/,ibrahimabdulkarim193@gmail.com,"Herogamer
+xyzero",No,Yes,Yes,Yes,Yes,Yes,Yes,,4.83,4,7,3,6,4,5,,,,Good concept however I believe we have some standard job boards in Stacks like job board & Hire Vibes. Also I know of one seeker,,,,,Yes,,,,,,
+6/6/2024 21:59:15,Rav@blockcity.fi,BlockCity - Building DeFi on Bitcoin,Developer Tooling,Liquid stacking using NFT,"Pain Points Collectors are struggling to sell their Ordinals and lack options to monetize without selling. Current monetization models focus on collectors. As a creator, once you sell an Ordinal, you lose connection with it. If this Ordinal appreciates 10x in the secondary market, there are no incentives for the creator.  We're developing Supercharged Bitcoin-native digital assets For Collectors: Purchase an Ordinal once and start earning passive monthly yields in Bitcoin (non-custodial). Profit without the need to sell or trade. For Creators: Make a single sale and enjoy passive monthly yields in Bitcoin. If your asset experiences a 10x increase in secondary sales, your yields will rise accordingly.  Instantly borrow with no interest payments and easily enhance your profitability with self-repaying loans. Bid farewell to high interest costs.","Enter ₿lockCity - A Bitcoin marketplace that enables creators and collectors to earn native yields in Bitcoin by holding digital assets (Ordinals, Runes, NFT, BNS, etc) in a non-custodial wallet. ₿lockCity is built on the principle that long term investors march towards sustainable & decentralized passive income models. More specifically, liquidity flows to where it can get consistent and reliable yields.","Impact: NFT Ordinals & BNS market
+Audience: collectors, creators
+Activities: develop MVP, formulate business-case & marketing messages to gain traction","Milestone1: Develop MVP, deploy to testnet, get beta users to provide feedback
+Milestone2: market the product to gain traction, 10k: twitter followers, discord members, testnet users",5000,,"develop mvp, help with marketing to gain traction",Continue working with BTCstartupLab to raise funds from investors,it will be open-sourced after audits are completed,I am a inventor and hold patents in web3 with 20 years of TradeFi experience.,"Challenges: scarcity of resources
+Obstacles: no major road blocks as design is vetted by domain experts
+Competition: we are building a better version of Lido StackingDAO Liquidium 7 Magic eden. They will have competition from us.",Detailed Intro to BlockCity Protocol https://blockcityfi.substack.com/p/introduction,"MrDecentralize, SirJonathan",My CTO has build and delivered POX stacking pool to Stacks Foundation and raised $400k+ in past 3 years,https://x.com/BlockCityFi,https://app.console.xyz/u/mrdecentralize,MrDecentralize,https://github.com/stacksgov/grants-program/issues/871,Rav@blockcity.fi,BTCStartupLab admin team,BlockCity is applying for first grant but my CTO has raised $400k+ from Stacks Foundation,Yes,Yes,Yes,Yes,Yes,Yes,,4.33,4,5,4,2,5,6,,,,"It is a nice concept, and I have personally experienced NFT staking on other chains. However, you kept emphasizing the ordinals, runes, etc, of  L1 without focusing on Stacks itself. I did not see how your application was related to Stacks, nor did you share any impact of the project on Stacks NFTs.",,,,,Yes,,,,,,
+6/28/2024 16:59:20,oyeins7@gmail.com,StacksOpenGov,Growth / Community building,Empowering ideas through collective support; Your one-stop crowd-funding platform on Stacks.,"StacksOpenGov is a community dedicated to fostering early-stage project ideas by harnessing the collective support of the entire Stacks ecosystem. This project aims to leverage the Stacks blockchain to create a system that facilitates mini-funding for projects in the Stacks ecosystem through smart contracts, and a decentralized mini grant delegation pool.",,"Project Focus and Impact: The impact of this project is mostly on the Stacks
+community at its initial stage, helping projects with mini funding. It helps the
+Stacks community by giving more people the urge to build for the community.
+- Target Audience and Strategies: The target audience for this project is
+everyone in the community that has an idea (nft artists, developers, creators,
+etc). The strategy used here is giving them a platform to get funded.
+- Project Activities and Outputs: The project activities include planning, design
+and execution. These activities are expected to give a fully functional application
+that will let anyone in the ecosystem to propose an idea to others in the
+community.",- Continuous improvement of the platform based on users’ feedback,4000,,"Update the existing UI
+- Updating the platform to have the different funding models
+- Marketing","Revenue streams (a certain percent will be collected from
+every fund to projects) and reserve funds from funds coming into the pool.","Yes, it will be open sourced",One of it is my familiarity with ecosystem and it's tools for building.,"The challenge this project is facing right
+now is finance and the needed to expertise for it's completion.",,Opuene Oyeinbomo,Votr - a hackathon project,https://x.com/oyeinbomo,https://app.console.xyz/u/oyeins,oyeins.dev,https://github.com/Oyeins-GUI,oyeins7@gmail.com,"Brice, Teke","Yes, for StacksOpenGo",Yes,Yes,Yes,Yes,Yes,Yes,,4.17,4,5,7,3,1,5,,,,I will love to see this coming to reality.,,,,,No,,,,,,
+6/24/2024 13:54:16,darien@samyca.com,Samyca: Payment Notification,Developer Tooling,"Developing a Payment Notification tool to integrate with the Stacks blockchain, allowing secure and efficient notifications of STX transfers to external services via REST API, simplifying development and reducing learning curves for new developers.","The Payment Notification tool addresses the lack of solutions that notify external services about STX transfers on the Stacks blockchain. This gap hinders the development of new applications needing to integrate with Stacks. Our tool solves this by enabling secure and efficient notifications via REST API, a common protocol that simplifies integration for developers.  Currently functional for EVM networks, the tool connects to external systems and sends signed notifications to prevent ""man-in-the-middle"" attacks. By extending support to the Stacks blockchain, we aim to lower the development and learning curve, facilitating easier and more secure integration for both new and experienced developers. This enhancement will not only improve transaction management security and efficiency but also promote broader adoption of the Stacks blockchain in various decentralized applications and external services.",,"Project Focus and Impact:
+Main Areas of Impact
++ Quantitative Outcomes:
+   - Integration Count: Enable integration of Payment Notification with at least 20 external applications within the first year.
+   - Transaction Monitoring: Monitor and notify about 10,000 transactions per day.
++ Qualitative Outcomes:
+   - Developer Adoption: Lower the barrier to entry for developers new to Stacks by providing a familiar REST API interface.
+   - Security and Efficiency: Enhance the security and efficiency of transaction management in applications using the Stacks network.
+
+Importance for the Stacks Community:
+This project is important for the Stacks community as it will facilitate the integration of the Stacks blockchain with various applications, promoting its adoption. By providing a tool that simplifies the process of monitoring and notifying transactions, developers can focus on building innovative solutions rather than dealing with the complexities of blockchain integrations.
+
+Target Audience and Strategy:
+Specific Groups and Communities
+- Developers: Both experienced blockchain developers and newcomers to the Stacks ecosystem.
+- Businesses and Startups: Companies looking to integrate blockchain technology into their services without extensive blockchain expertise.
+
+Strategies to Achieve Impacts
+- Developer Outreach: Engage with the developer community through workshops, webinars, and hackathons to demonstrate the tool's capabilities.
+- Partnerships: Collaborate with businesses and startups to integrate the Payment Notification tool into their services.
+- Documentation and Support: Provide comprehensive documentation and dedicated support to assist developers in using the tool effectively.
+
+Project Activities and Outputs:
+Activities Supported by Project Funding
+- Research and Development: Study and analyze the Stacks blockchain architecture to develop the block explorer.
+- Implementation: Develop and implement the block explorer for Stacks.
+Integration: Connect the block explorer with the Payment Notification tool and ensure seamless operation.
+
+Expected Outputs
+- Functional Block Explorer: A robust block explorer for the Stacks blockchain integrated into the Payment Notification tool.
+- Transaction Notification System: A system capable of securely notifying external services about STX transactions.
+
+Broader Impact
+- For Developers: Simplified integration processes, reduced development time, and enhanced security for transaction notifications.
+- For Non-Developers: Increased trust and adoption of Stacks-based applications due to reliable transaction monitoring and notification.","Timeline:
+30 business days
+
+Milestone 1: Research and Analysis (10 days)
+Deliverables:
+- Completion of a comprehensive study and analysis of the Stacks blockchain architecture and of STX transfer events.
+- Identification and documentation of key points for integration with the Payment Notification tool.
+- Metric: Detailed report on Stacks blockchain event handling and integration points.
+
+Milestone 2: Block Explorer MVP Development (10 days)
+Deliverables:
+- Development and implementation of a block explorer to monitor STX trasnfer events on the Stacks blockchain.
+- Initial testing and validation of the block explorer.
+- Metric: Functional block explorer for the Stacks blockchain, capable of monitoring and recording events.
+
+Milestone 3: Integration and Final Testing of the MVP (10 days)
+Deliverables:
+- Integration of the block explorer with the Payment Notification tool.
+- Comprehensive integration testing to ensure seamless operation.
+- Final validation of the complete MVP, ensuring notifications are securely and efficiently sent to external services.
+- Metric: Fully integrated Payment Notification tool with support for Stacks blockchain, capable of monitoring and notifying about STX trasnfers.",4000,,"We are requesting a total funding amount of $4,000 USD. This budget is essential to cover the development, testing, and deployment of an MVP for the Payment Notification tool with support for the Stacks blockchain. The breakdown of the costs is as follows:
+- Research and Development: $1,000
+- Implementation of Block Explorer MVP: $1,200
+- Integration and Final Testing of the MVP: $1,300
+- Miscellaneous Expenses (e.g., infrastructure, additional testing resources): $300
+- Marketing: $200","To ensure the sustainability of the Payment Notification tool beyond the De-Grants program, we plan to adopt the following strategies:
+
+1- Freemium Model:
+    - Basic Tier: Offer a free tier with essential features for small projects and individual developers. This will encourage adoption and provide a user base for feedback and improvements.
+    - Premium Tier: Introduce a subscription-based premium tier with advanced features, enhanced support, and additional integrations. This will generate recurring revenue to support ongoing development and maintenance.
+
+2- Partnerships and Collaborations:
+    - Forge partnerships with businesses and startups that utilize the Stacks blockchain. By integrating Payment Notification into their services, we can establish long-term collaborations that provide both financial support and broader adoption.
+    - Collaborate with educational institutions and blockchain training programs to include Payment Notification in their curricula. This will increase tool usage and foster a new generation of developers familiar with our solution.
+
+3- Community Engagement:
+    - Actively engage with the Stacks community through forums, social media, and events. By building a strong community around the tool, we can gather valuable feedback, promote continuous improvement, and attract contributions from open-source developers.
+    - Organize hackathons, webinars, and workshops to showcase the tool's capabilities and gather input for new features and enhancements.","Yes, We strongly believe in the power of open-source development and the value it brings to the blockchain community. By making the Payment Notification tool open-source.","Darien Macias
+
+Extensive Experience:
+- 14+ years in software development
+- Blockchain Enthusiast since 2017
+- Blockchain Developer since 2019
+
+Proven Leadership and Innovation:
+- Founder & Blockchain Lead at Samyca
+- Blockchain Lead at Mekka
+- Worked on significant projects like the unified state portal for the Uruguayan government and COVID-19 vaccination certificate verification
+
+Dedication and Vision:
+- Personal Investment: Initial development funded through personal savings, demonstrating my commitment to the project's success
+- Long-Term Vision: Plan to extend the tool to support multiple blockchains, innovate continuously, and ensure sustainability","Project Challenges and Risk Mitigation
+Technical Challenges:
++ Integration Complexity: Integrating the Payment Notification tool with the Stacks blockchain may involve unforeseen technical challenges.
+   - Mitigation Strategy: Conduct thorough research and analysis of the Stacks blockchain architecture before development. Maintain close communication with the Stacks developer community for support and guidance.
++ Scalability: Ensuring the tool can handle high volumes of transactions and notifications efficiently.
+   - Mitigation Strategy: Implement robust testing and optimization procedures. Utilize scalable infrastructure and technologies.
+
+Financial Challenges:
++ Funding Constraints: Securing adequate funding to cover development, testing, and operational costs.
+   - Mitigation Strategy: Diversify funding sources by applying for additional grants and seeking partnerships. Implement a freemium model to generate recurring revenue.
+
+Operational Challenges:
++ Team Coordination: Ensuring seamless collaboration among team members working remotely.
+   - Mitigation Strategy: Utilize project management tools and regular communication channels to maintain coordination and track progress.
+
+Market Competition and Impact
+Existing Competition:
++ Competition: There are existing notification tools for other blockchain networks, but few, if any, specifically for the Stacks blockchain.
+   - Impact: The presence of similar tools for other blockchains highlights the demand for such solutions and validates the need for a Stacks-specific tool.
+   - Mitigation Strategy: Differentiate our tool by focusing on the unique needs of the Stacks community. Offer superior security features, ease of integration, and comprehensive support.",,Darien Macias,"While I have not yet had the opportunity to contribute code to the Stacks blockchain directly, I have actively participated in and contributed to several other open-source projects in the blockchain ecosystem. Here are some of my contributions:
+
+- graphprotocol/graph-node
+- graphprotocol/graph-tooling
+- ChainSafe/truffle-plugin-abigen
+- aaitor/truffle-plugin-blockscout-verify
+- merkletreejs/merkletreejs
+- rahulthakkar796/tron-wallet-hd
+- coinspect/learn-evm-attacks
+- tronprotocol/tronbox",https://x.com/DarienMaciasH,https://app.console.xyz/u/darienmh,darienmh,https://github.com/darienmh,darien@samyca.com,"
+- https://twitter.com/StacksLatam
+- https://twitter.com/angelesp
+- https://x.com/jnolascob
+- https://twitter.com/tinconomad",No,Yes,Yes,Yes,Yes,Yes,Yes,,4.00,4,7,3,4,1,5,,,,Payment notification will be great on stacks but there are some conflicting sections in your application. eg What do you mean by learning curve for stacks developers? Would also need more details in sustainability and  integrations.,,,,,No,,,,,,
+6/24/2024 16:11:36,ockiyacliffc@gmail.com,Stacks DevHub ,Developer Tooling,"Stacks DevHub is a decentralized platform that integrates code collaboration and an API marketplace, built on the Stacks blockchain.","Developers face challenges in securely collaborating on code and monetizing APIs. Current platforms lack transparency, incentivization, and efficient tools for managing open-source projects, limiting innovation and growth in the developer community. Stacks DevHub is a decentralized platform built on the Stacks blockchain that integrates code collaboration and an API marketplace. It allows developers to securely collaborate on open-source projects with features like version control, project management, and peer reviews, all incentivized through smart contracts. Developers can publish and monetize APIs, with transparent, smart contract-based revenue sharing. This platform enhances security, fosters innovation, and creates revenue opportunities, addressing key issues for developers by providing a comprehensive, decentralized solution for collaboration and monetization. ",,"Main Areas of Impact:
+
+Quantitative: Increase in collaborative projects and APIs published on Stacks, and enhanced developer participation.
+Qualitative: Improved application security and quality, fostered innovation, and strengthened community engagement.
+Importance for Stacks Community: Stacks DevHub enhances secure collaboration and monetization, driving growth and innovation within the Stacks ecosystem.
+
+Target Audience and Strategy
+Target Audience:
+
+Developers looking to collaborate and monetize their work.
+API creators seeking to publish and earn.
+Open-source project teams and individuals.
+Strategy:
+
+Conduct webinars and tutorials for onboarding.
+Engage through forums, social media, and meetups.
+Offer incentivization programs with Stacks tokens.
+Project Activities and Outputs
+Activities Supported by Funding:
+
+Develop and maintain the Stacks DevHub platform.
+Conduct regular security audits.
+Promote the platform to attract users.
+Expected Outputs:
+
+A fully operational platform with collaboration and API marketplace features.
+An increasing number of high-quality APIs.
+A growing and active developer community.
+Broader Impact:
+
+For Developers: Secure, transparent, and incentivized collaboration and monetization.
+For Non-Developers: Improved quality and security of applications.
+For the Stacks Community: A collaborative and innovative environment fostering sustainable growth.","Milestone 1: Platform Development and Initial Launch
+
+Deliverables:
+Platform MVP (Minimum Viable Product):
+Develop and launch the basic functionalities of Stacks DevHub, including decentralized code collaboration tools and API publishing features.
+Security Audit:
+Conduct an initial security audit to ensure the platform’s reliability and safety.
+Initial User Onboarding:
+Onboard the first 50 developers through targeted outreach and educational webinars.
+Metrics:
+Platform Usage:
+At least 20 collaborative projects initiated and 10 APIs published within the first month of launch.
+User Engagement:
+Active participation from at least 50 developers in the first month.
+
+STX Distribution:
+Upon successful completion of the platform MVP, security audit, and initial user onboarding, a predetermined amount of STX tokens will be distributed.
+Milestone 2: Community Expansion and Feature Enhancement
+
+Deliverables:
+Feature Enhancements:
+Implement additional features based on user feedback, such as enhanced project management tools, advanced API marketplace functionalities, and incentivization mechanisms.
+Marketing and Outreach Campaigns:
+Launch comprehensive marketing campaigns to attract more developers and API creators, including social media promotions, developer meetups, and partnerships.
+Community Engagement:
+Foster community engagement through regular webinars, workshops, and forums, aiming for a 5% increase in active users.
+Metrics:
+Platform Usage:
+At least 10 collaborative projects and 30 APIs published within three months.
+User Engagement:
+Active participation from at least 50 developers within three months.
+STX Distribution:
+Upon successful completion of feature enhancements, marketing campaigns, and community engagement activities, the remaining STX tokens will be distributed.
+Project Focus and Impact
+Main Areas of Impact:
+
+Quantitative: Increase in collaborative projects and APIs published on Stacks, and enhanced developer participation.
+Qualitative: Improved application security and quality, fostered innovation, and strengthened community engagement.
+Importance for Stacks Community: Stacks DevHub enhances secure collaboration and monetization, driving growth and innovation within the Stacks ecosystem.
+
+Target Audience and Strategy
+Target Audience:
+
+Developers looking to collaborate and monetize their work.
+API creators seeking to publish and earn.
+Open-source project teams and individuals.
+Strategy:
+
+Conduct webinars and tutorials for onboarding.
+Engage through forums, social media, and meetups.
+Offer incentivization programs with Stacks tokens.
+Project Activities and Outputs
+Activities Supported by Funding:
+
+Develop and maintain the Stacks DevHub platform.
+Conduct regular security audits.
+Promote the platform to attract users.
+Expected Outputs:
+
+A fully operational platform with collaboration and API marketplace features.
+An increasing number of high-quality APIs.
+A growing and active developer community.
+Broader Impact:
+
+For Developers: Secure, transparent, and incentivized collaboration and monetization.
+For Non-Developers: Improved quality and security of applications.
+For the Stacks Community: A collaborative and innovative environment fostering sustainable growth.",3500,,"The funding for Stacks DevHub, totaling $3500, will be allocated across several key areas to ensure the project's success. Firstly, $1500 will be dedicated to platform development, covering the purchase of essential development tools and software licenses and compensating developers for their work. To maintain high-security standards, $500 will be allocated to security audits, including an initial audit ($300) and ongoing security checks ($200). Marketing and outreach efforts will receive $800, with funds supporting initial marketing campaigns ($400), educational webinars and workshops ($200), and community engagement activities ($200). An additional $400 will be set aside for feature enhancements, focusing on implementing user feedback ($250) and developing advanced functionalities ($150). Finally, $300 will cover operational costs, including maintenance and support ($200) and administrative expenses ($100). This comprehensive funding strategy ensures that Stacks DevHub will be well-equipped to develop a robust platform, maintain security, effectively reach and engage the developer community, and sustain long-term operations","To ensure the longevity of Stacks DevHub beyond the DeGrants program, we have a clear strategy. Our primary focus is to generate revenue through premium subscription tiers offering advanced features and a small transaction fee on API marketplace transactions. This will provide a consistent income stream as the platform grows.
+
+We aim to build a vibrant community by investing in regular webinars, workshops, and developer meetups, fostering ongoing engagement and collaboration. Additionally, we will seek strategic partnerships with other blockchain and tech companies to expand our reach, access new funding sources, and enhance our technological capabilities.
+
+By combining a strong revenue model, active community engagement, and strategic partnerships, we plan to create a self-sustaining ecosystem that ensures the long-term success and impact of Stacks DevHub.","Yes, Stacks DevHub will be open-sourced. ","As a developer with a background in chemical engineering and five years of experience in full-stack development, I'm passionate about leveraging technology to simplify and improve lives. My journey into the blockchain industry reflects my commitment to exploring innovative solutions and empowering younger developers to thrive in this rapidly evolving field.
+
+My motivation for creating Stacks DevHub stems from the challenges I encountered when starting my journey as a blockchain developer. Transitioning into this complex and rapidly evolving field, I faced hurdles such as limited access to comprehensive tools for collaboration, difficulties in navigating decentralized ecosystems, and the daunting task of monetizing my work through APIs. These challenges inspired me to develop a platform that simplifies the development process, enhances collaboration among developers, and provides transparent avenues for monetization through a decentralized API marketplace.","Creating Stacks DevHub presents several challenges and risks that I am prepared to mitigate effectively. From a technical standpoint, developing a robust blockchain platform involves navigating complexities in smart contract development, decentralized storage integration, and ensuring top-notch security measures. To address these challenges, I will leverage experienced blockchain developers and prioritize thorough testing and audits to guarantee platform reliability. Financially, establishing a sustainable revenue model while maintaining accessibility for developers is crucial. I plan to implement a multi-tier subscription model and transaction fees on the API marketplace to ensure steady income streams. Operationally, scaling the platform to accommodate growth without compromising performance is another key consideration, which will involve designing for scalability and optimizing continuously. Regulatory compliance and initial user adoption barriers are also potential obstacles that I will navigate through adherence to evolving regulations and proactive user education initiatives. In terms of competition, while there are existing platforms offering similar developer tools and marketplaces, I aim to differentiate Stacks DevHub through strategic partnerships within the Stacks community. These strategies collectively position Stacks DevHub to thrive in the competitive blockchain landscape, fostering innovation and collaboration among developers.",,IvyarT,chessonchain,https://x.com/ObaOFArt,https://app.console.xyz/u/ockiya-cliff,ivyart#1920,https://github.com/OckiyaCliff,ockiyacliffc@gmail.com,https://x.com/Tekegeorge1,no,Yes,Yes,Yes,Yes,Yes,Yes,,4.00,4,4,1,4,5,6,,,,We have Github for collaborations and Hiro for API,,,,,No,,,,,,
+6/28/2024 19:55:18,unicornlaunching@gmail.com,Syndi As DevRel,AI,Syndi is the AI DevRel for Stacks.,"Syndi does DevRel. That's it. Developers shouldn't answer stupid questions, bots should.",https://creator.voiceflow.com/prototype/664fd390d90db064fb406217,"Project Focus And Impact: improving developer community onboarding and reducing the amount of time that Developers spend asking FAQ.
+
+Target Audience & Strategy:
+Attend developer spaces and create AI solutions that ensure key stacks developers can focus on the right conversation.
+
+Project Activities And Outputs:
+Funding will be used to buy a voiceflow.com account premium subscription which can be used to create DevRel Agents.","Metrics: Questions Answered, New Users Onboarded. We will start month-to-month with voiceflow and then progress to the premium plan when usage and demand is required.",500,,"Funding will be used to fund the voiceflow.com premium account for AI usage to power DevRel and the creation of other agents. My time will be free, as it's always been, for training and knowledge transfer. We can decide to move to an annual plan when the usage demand grows.",The main purpose of Syndi as DevRel is to onboard new developers and collapse the time between their first time hearing about us and their first line of committed code.,Yes,"Because I'm already building AI tools for stacks that are used. 
+
+40+ uses for Get Clarity, Smart Contract AI Developer
+https://creator.voiceflow.com/prototype/664fd390d90db064fb406217
+
+30+ uses for Stacks as Exponential Organization Accelerator
+https://creator.voiceflow.com/prototype/6650e7cf14006b6ed2705eaf","Project Challenges and Risk Mitigation
+I've mitigated the risks by operating Syndi during the Stacks meetings. Every time she shows up she gets glowing reviews. Since I know how to code and configure everything myself, I'm the only team member required to do everything to create the DevRel Agents.
+
+Obstacles and Implementation barriers:
+I need to meet with the Devs to learn the FAQs and then begin attending spaces and answering questions for audience members live with Syndi.
+
+Market Competition & Impact
+There are other AI tools, but none of them show up to the spaces and actually help the community live. That's where Syndi comes in.
+",Here's a fresh example of how Syndi can help demystify complex concepts for people: https://codepen.io/unicornlaunching/details/eYaaRJR,Michael Jagdeo,"Stacks EXO Accelerator Agent: https://creator.voiceflow.com/prototype/6650e7cf14006b6ed2705eaf
+
+Get Clarity Smart Contract Developer: 
+https://creator.voiceflow.com/prototype/664fd390d90db064fb406217",http://www.twitter.com/attractfund1ng,https://app.console.xyz/u/attractfund1ng,unicornlaunching#9341,https://github.com/unicornlaunching/,unicornlaunching@gmail.com,"Hero, Haddy, Davek, GoodKitty, Stuart",No,Yes,Yes,Yes,Yes,Yes,Yes,,3.83,5,4,3,4,2,5,,,,Little to no deep insigt on relevance to everyday dev and Stacks.,,,,,Yes,,,,,,
+6/28/2024 17:01:58,skliz4rel@gmail.com,Rug Detector,Others / Bluesky Ideas,A Trading tool that help reduce rug pulls. This would help detect utility/memecoins that are potential rug pulls on the Stacks network.,We intend building Trading tool that can scan the Stacks blockchain for transactions specific to a specific memecoin or utility project and detect potential rug pulls. This would help trading normies avoid rugpulls using AI metrics and previous data history and reduce financial loss on the Stack blockchain.,https://www.youtube.com/watch?v=y715k0PbdZI,"Project Focus and Impact
+Currently a lot of projects are built to rug their traders or investors. Rug Detector is a tool that can help you in trading and notify you of projects that are potential rug pulls on the Stacks blockchain.
+This would help us create a trend on twitter to discourage investors from investing in this tokens which would make the Stacks blockchain a safer place to invest in. So Normies would prefer to invest in the solid memecoins like NOTing , welsh e.t.c. not random scam tokens.
+
+572 million dolls was lost in Q2. Alot of funds have been lost in Ethereum and solana blockchain. We need some safety on Stacks blockchain.
+
+Target Audience and Strategy
+Experience and inexperience investors but mostly Inexperience investors.
+
+Project Activities and Outputs
+We would expose apis to developers who might be needing this data in their projects.
+We would also expose the pros and cons of each of the projects on the stx blockchain for non-developers which would be a safety tool and trading assistant when trading.","Milestone 1
+Develop backend apis that connects to read transactions on Stack blockchain, mobile application and web tool for investors to view this data.
+Period: 3 months to develop MVP
+
+Milestone 2:
+Launch MVP for users to have a feel of it and give feedback.
+Period : 1 month to test the MVP
+1 month to ship mvp to potential users.
+Total 2 Months.",2500,,2 Developers would be paid 2500 usd in 3months,We intend creating a section on the Tool were credible project on stacks ecosystem can advertise their tokens so we would use the ads generated revenue to scale up to become a company,A part would be open sourced. This is the api stack that devs would connect to. This would allow different kinds of dev indespective of the programming language to connect to rug pull dectector,I come from a Startup background.,"Challenges.
+Funds to pay a developer to assist me in building the stacks.
+Risk
+The only risk is not having enough hands to implement well.
+Risk Mitigation
+I am a developer with 10 years experience in developing product. So I would ensure I participate in the development of this product to avoid shipping a substandard product.
+
+Obstacles and Implementation Barriers
+Getting Apis to run analytics on identifying the rug pull trading patterns on trading charts of tokens that are traded on the Stacks blockchain.
+
+Been looking into the Stacks apis, Alex apis and Velar apis already.
+
+Market Competition and Impact
+StacksAlert is a project that detect fraudulent tokens. This is the only competition that I know but we intend doing it  in a more unique way. Getting trading metrics and metrics on wallet activities on this potential rugpull projects.",,Akindejoye Olajide,https://github.com/skliz4rel/middleware,https://x.com/promptfinder,https://app.console.xyz/u/skliz4rel,skliz4rel,https://github.com/skliz4rel,skliz4rel@gmail.com,"Ask Moderator for Welsh (@SirLatimer1, @bitbybit) I work with welsh raid team with username @Jade on telegram and twitter account @promptfinder.
+
+When you mention this they would remember the personality behind it.",No,Yes,Yes,Yes,Yes,Yes,Yes,,3.67,3,3,4,3,5,4,,,,I am skeptical about the approach and long term in Stacks,,,,,Yes,,,,,,
+6/28/2024 16:29:49,givafashionreimagined@gmail.com,Giva Ecosystem ,Infrastructure,The #1 Leading web3  E-commerce Fashion Platform,Giva is connecting fashion designers with international shoppers in a global marketplace. Giva blends traditional and emerging shopping experiences to connect indigenous fashion designs to a global audience of fashion shoppers.,,"Focus: At Giva, we've developed a system that is driven by decentralized technology, putting local fashion in front of anyone who wants it, anywhere in the world, with no payment or geographical restrictions.
+
+Target audience: Indigenous fashion designers can get their collections seen by anyone. Shoppers will find the most unique and authentic designs no one else has.
+
+Project activities encompass:
+
+1. Global Reach & Visibility: Expanding our international presence and brand recognition.
+2. Innovative Shopping: Implementing cutting-edge retail solutions.
+3. Flexible Payments: Offering diverse and user-friendly payment options.
+
+Additionally, we operate an educational academy. This initiative serves as our contribution to the community, providing valuable insights into blockchain and Web3 technologies. The academy aims to bridge the knowledge gap for Web2 professionals, enabling them to engage more effectively with Web3 projects and opportunities.","Key performance indicators:(product Roadmap)
+
+Phase 1
+
+Finalize platform design and user interface.
+
+Develop core functionalities for product listing and transactions.
+
+Integrate with the blockchain and payment processors.
+
+Release the MVP
+
+Gather feedback and iterate on core product features.
+
+Build brand awareness through targeted campaigns and social media engagement.
+
+Partner with DAOS , other relevant communities, and influencers to develop educational content, AMAs, etc about web3, inclusivity, and scalability of e-commerce businesses.",2000,,"
+1. Development of the core platform: A significant portion will be invested in compensating our team of skilled professionals as they design and build the main platform.
+
+2. Operational infrastructure: The remaining funds will be dedicated to addressing crucial logistical challenges and implementing a robust payment system.","Partner with DAOS , other relevant communities, and influencers to develop educational content, AMAs, etc about web3, inclusivity, and scalability of e-commerce businesses while we keep building and scouting for more funding opportunities.","We embrace Web3's decentralized ethos, but our approach balances this with practical centralized elements where beneficial, creating a hybrid model that optimizes both user empowerment and operational efficiency.","Giva was founded in 2024 by Rhoda Onuoha, an innovative marketer with a deep history and passion for fashion and technology. After 10 frustrating years of experiencing the challenges of exporting local fashion items to international shoppers who wanted them, the introduction of decentralized technology gave birth to the new face of fashion and technology.
+By making it easy for local fashion designs to be available worldwide, Giva was built by Rhoda to break the barriers facing Nigerian fashion brands - like limited visibility and payment issues.","Project Challenges and Solutions:
+Logistics:
+Our primary challenge is ensuring efficient product management and delivery. To address this, we're implementing a sophisticated warehousing system, optimizing inventory control and enabling rapid order fulfillment and shipping.
+
+Payment Infrastructure:
+Developing a secure and seamless payment system is crucial. We require funding to establish and deploy smart contracts, which will facilitate transparent, efficient, and trustworthy transactions within our platform.
+
+Market competition: While we face competition from established retailers like PacSun, Jomashop, and others, Giva distinguishes itself in the African market by offering more than just e-commerce; we're creating a comprehensive Web3 ecosystem that integrates shopping with blockchain technology, providing a unique and immersive experience for our users.",www.giva.app,"Rhoda, Aisha,Tolu, bayo and esther",Sheisnear dao,https://x.com/giva_non?s=21,https://app.console.xyz/u/giva_non,Rhodareads ,https://github.com/giftnicky,givafashionreimagined@gmail.com,"Jerry (https://x.com/ojimadujerry?s=21)
+Sharufa (https://x.com/sharufarwalker?s=21)",No,Yes,Yes,Yes,Yes,Yes,Yes,,2.50,3,2,1,3,1,5,,,,Thanks for Applying,,,,,Yes,,,,,,
+,,,,,,,,,"$40,000","$9,000",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Withdrawal applications:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+6/26/2024 15:42:59,stings_backing0n@icloud.com,Byphrost Bridge,Bridge,A crypto bridge between Stacks and Solana.,It's very difficult to get between Stacks and Solana right now and normally a user will multi-hop bridge or use a CEX. Byphrost provides a frictionless and cost-effective method for getting between Stacks and Solana.,Video I made before testnet release: https://x.com/groupreadaccess/status/1805342740646961381,I'm targeting users who are both users of Stacks and Solana. This is important for Stacks so that we can unlock more liquidity. These funds will be used mainly as living expenses for myself while I continue to develop this product.,"1. Release alpha version on testnet (completed today)
+2. Incorporate (probably wyoming), register with FinCEN
+3. Finish bidirectional bridging support (go from STX -> SOL and back, and vice versa)
+4. Add support for STX <> Ethereum (might be 4, might be after mainnet)
+5. Implement KYC
+6. Release on mainnet",5000,,"- Mortgage: 3000
+- Food: ~1000
+- Infra: ~200
+- Kids: ~800",The goal is to get to mainnet so that we can start taking revenue and become self-sustainable asap. ,,"I have been in crypto for several years, most recently working at Coinbase. I bring a unique blend of technical ability and understanding of compliance.","The largest challenges are legal. It is very important that we do everything by the book and build an exchange that has the ability to grow inside of the regulatory rules that already exist. We will mitigate this risk by building a very compliant bridge.
+
+There are no implementation barriers.
+
+Our competition include XLink and PortalBridge, but neither of these provide a Stacks <> Solana bridge nor do they follow compliance standards.",,Will Harrison,None,https://x.com/groupreadaccess,https://app.console.xyz/u/groupreadaccess,orangesodium.btc,,stings_backing0n@icloud.com,"@LMNOStacks, @grant_nissly, @RaphaStacks",No,Yes,Yes,Yes,Yes,Yes,Yes,3,0.00,0,0,0,0,0,0,,,,,,,,,,,,,,,
+6/28/2024 16:37:56,ludovic@galabru.com,Txtx: Introducing Smart Contract Runbooks,Infrastructure,"Smart Contract Runbooks turn the stress, pain and complexity of Smart Contract Infrastructure management into a secure, robust and scalable developer experience.","We can break down the Web3 development process in 4 main phases: Development, Testing, Deployment, and Operation.  To handle deployments and operations, developers are writing custom scripts that are encoding, signing and sending contract deployments and contract calls on chain by manupulating private keys manually (very insecure). Most of the time they are undocumented, unaudited, unmaintained and fragile.  With Txtx, we are introducing Smart Contract Runbooks. A Runbook is a recipe designed to make sequences of blockchain interactions (like contract deployments or contract calls) reproducible and robust. With our solution, developers can build their infrastructure for running their operations in matter of minutes / hours, instead of days / weeks. We introduce a declarative programming language designed for writing Smart Contract Runbooks and we maintain open source developer tooling (IDE extension, CLI tool, runbook registry, etc), helping developers work efficiently with Runbooks.",,"Securing Operations
+Runbooks replace traditional one-off JavaScript files for smart contract deployment and interaction, mitigating the security risk of handling sensitive private keys directly by providing a more secure, structured, and user-friendly approach.
+
+Communication between Organizations
+Smart Contract Runbooks standardize processes, reducing the learning curve and facilitating seamless communication and collaboration between companies. Their composability allows organizations to share and reuse workflows, ensuring consistency and promoting a shared understanding, enhancing onboarding and scalability.
+
+Time to market
+Txtx allows developers to bring their products to market much faster. They can focus on refining their smart contracts and ensuring they meet user needs, rather than getting bogged down in the intricacies of contract integration.","The project is approaching an alpha stage and completely de-risked. Our goal is to open our beta end of July (in Nashville), and have a release candidate by end of August.",6000,,"We will be hiring a design studio, to improve the UI/UX of our product - turning it from acceptable to great, which is key for a tool that teams will be using on a daily / weekly basis.","The core of the product will be open source, and usable by developers on their machine, offline if they want to.
+We think we can provide cloud services completing this offer. ",Open source project!,"Ludo: Ex-Hiro. Core contributor stacks-core, co-author of Clarity, primary author of BNS. Inventor of Clarinet, stacks-devnet-js, Chainhook, Ordhook, Pyth for Stacks.
+
+Micaiah: Ex-Hiro, Ex-Consensys.
+
+We spent a lot of years together helping and supporting developers from the Stacks ecosystem. We love the DeGrant brand, and would love to be proud DeGrantees. ","We were able to de-risk this project over the last few months, the next weeks are pure execution.",,Ludo and Micaiah,"https://github.com/stacks-network/stacks-core/graphs/contributors
+https://github.com/hirosystems/clarinet/graphs/contributors
+https://github.com/hirosystems/chainhook/graphs/contributors
+https://github.com/hirosystems/ordhook/graphs/contributors
+https://github.com/hirosystems/stacks-pyth-bridge/graphs/contributors",x.com/ludovic,https://app.console.xyz/u/ludovic,lgalabru,https://github.com/lgalabru,ludo@txtx.builders,"Muneeb, Diwaker, Aaron","Stacks Foundation, for this project.",Yes,Yes,Yes,Yes,Yes,Yes,,0.00,0,0,0,0,0,0,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,jodbe,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
