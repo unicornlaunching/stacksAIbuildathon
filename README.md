@@ -1,3 +1,4 @@
+# The Syndicate AI Buildathon on Stacks Part One
 # **Stacks Ecosystem Security Shift**
 
 This document analyzes the key decisions and discussions surrounding the shift in focus from an AI-powered community copilot to prioritizing security tools within the Stacks ecosystem.
