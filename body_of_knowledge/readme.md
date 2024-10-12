@@ -16,4 +16,4 @@ An AI is only as good as its access to relevant, labeled information.
 - [x] Stacks And Clarity Documentation.pdf
 - [x] Stacks - White Paper II.pdf
 
-##### If you'd like to create your own customized Stacks AI FAQ Agent with unlimited questions, visit notebooklm.google.com and add the sources provided in this repo.
+##### If you'd like to create your own customized Stacks AI FAQ Agent with unlimited questions, visit [NotebookLM by Google](http://notebooklm.google.com) and add the sources provided in this repo.
