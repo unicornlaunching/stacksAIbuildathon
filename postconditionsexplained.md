@@ -51,4 +51,37 @@ While post conditions offer many advantages, there are some **limitations** to k
 
 ---
 
-By leveraging **post conditions** effectively, you can **safeguard your assets** and increase trust in smart contract interactions within the **Stacks blockchain ecosystem**! 🌐✨
+## 🖥️ **A Simple Clarity Smart Contract Demonstrating Post Conditions** 💻
+
+Here's a simple Clarity smart contract that demonstrates how post conditions work. It defines a basic token transfer mechanism with a post condition to ensure the sender’s balance is correctly decremented.
+
+```clarity
+;; This contract showcases the use of post conditions in Clarity.
+;; It defines a simple token transfer mechanism with a post condition
+;; ensuring the sender's balance is correctly decremented.
+
+(define-map balances principal uint)
+
+;; Define a public function for transferring tokens.
+(define-public (transfer (amount uint) (recipient principal))
+    (begin
+        ;; Get the sender's current balance.
+        (let ((sender tx-sender) 
+              (sender-balance (default-to u0 (map-get? balances sender))))
+            ;; Assert the sender has sufficient balance.
+            (asserts! (>= sender-balance amount) (err u100))
+
+            ;; Decrement the sender's balance.
+            (map-set balances sender (- sender-balance amount))
+
+            ;; Increment the recipient's balance.
+            (map-set balances recipient (+ (default-to u0 (map-get? balances recipient)) amount))
+
+            ;; Specify a post condition to ensure the sender's balance is reduced by the transferred amount.
+            (print {type: "post-condition", condition: (is-eq (get sender-balance (map-get? balances sender)) (- sender-balance amount))})
+
+            ;; Return 'ok true' to indicate a successful transfer.
+            (ok true)
+        )
+    )
+)
