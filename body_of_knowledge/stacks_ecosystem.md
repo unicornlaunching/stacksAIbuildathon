@@ -55,6 +55,10 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Zest Protocol](https://www.zestprotocol.com)**  
   Zest Protocol is a Bitcoin lending protocol designed for institutional investors, offering large-scale lending services using Bitcoin as collateral.
 
+- **[Velar](https://velar.com/)**  
+  Velar - Unlock Bitcoin Liquidity. Velar enables seamless swapping, trading, launching assets on premier Bitcoin L2s, providing unparalleled liquidity and flexibility.
+  
+
 </details>
 
 <details>
