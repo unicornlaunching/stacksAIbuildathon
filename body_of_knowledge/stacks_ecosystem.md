@@ -58,7 +58,6 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Velar](https://velar.com/)**  
   Velar - Unlock Bitcoin Liquidity. Velar enables seamless swapping, trading, launching assets on premier Bitcoin L2s, providing unparalleled liquidity and flexibility.
   
-
 </details>
 
 <details>
@@ -96,6 +95,9 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 
 - **[Clarinet](https://docs.hiro.so/clarinet)**  
   Clarinet is a development toolset for writing and deploying Clarity smart contracts on the Stacks blockchain.
+
+- **[AI BTC](https://aibtc.dev/)**
+  AI BTC is developing primitives for integrating L2 Bitcoin into resources and tools that expand the capabilities of AI agents.
 
 </details>
 
