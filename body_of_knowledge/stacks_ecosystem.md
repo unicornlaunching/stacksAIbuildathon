@@ -1,8 +1,17 @@
 # Stacks Blockchain Ecosystem Overview
 
 ## Introduction
+
 The Stacks blockchain ecosystem is a network of companies, developers, and organizations working together to extend Bitcoin’s functionality. By building decentralized applications (dApps), financial protocols, and NFTs on top of the Stacks blockchain, the ecosystem aims to leverage Bitcoin's security with the additional capability of smart contracts and decentralized finance (DeFi). Below is an overview of the key players in this ecosystem, along with their roles and contributions.
 
+## Wallets
+
+- **[Xverse](https://www.xverse.app/)**
+ The Bitcoin Wallet for everyone All your Bitcoin assets in one place. Available on iOS, Android and Chrome on desktop.
+
+- **[Leather](https://leather.io/)**
+ Leather is a wallet enabling you to tap into the multi-layered Bitcoin economy
+  
 ## Foundational Organizations
 
 - **[Stacks Foundation](https://stacks.org)**  
@@ -17,13 +26,15 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Daemon Technologies](https://www.daemontechnologies.co)**  
   Daemon Technologies supports decentralized Stacks mining by providing infrastructure and educational resources, promoting a decentralized and accessible mining ecosystem.
 
-## Decentralized Finance (DeFi) & NFT Platforms
+- **[DeGrants](https://degrants.xyz)**  
+  Designed and incubated by dedicated community members from all corners of the Stacks ecosystem, the DeGrants (decentralized grants) program aims to fund and support a wide range of projects that are beneficial to Stacks community members and network.
 
-- **[Boom](https://www.boom.money)**  
-  Boom is a decentralized social platform and NFT marketplace that enables creators to mint, trade, and sell NFTs on Stacks.
+## Self-Sovereign Identification Systems
 
-- **[STX City](https://stx.city)**  
-  STX City is the easiest way to launch a token on Stacks without having to learn a single line of code. A bonding curve mechanism is used to dynamically generate price discovery for your token on Stacks without having to worry about liquidity pools and all that fancy stuff.
+- **[BNS v2](https://www.bnsv2.com/)**
+  BNS stands for Bitcoin Naming Service, and is the system upon which the .btc address operates.
+
+## Decentralized Finance (DeFi)
 
 - **[Arkadiko](https://www.arkadiko.finance)**  
   Arkadiko is a DeFi protocol offering decentralized lending and stablecoin creation services using Bitcoin as collateral.
@@ -34,8 +45,23 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Zest Protocol](https://www.zestprotocol.com)**  
   Zest Protocol is a Bitcoin lending protocol designed for institutional investors, offering large-scale lending services using Bitcoin as collateral.
 
+## Launching Tokens
+
+- **[STX City](https://stx.city)**  
+  STX City is the easiest way to launch a token on Stacks without having to learn a single line of code. A bonding curve mechanism is used to dynamically generate price discovery for your token on Stacks without having to worry about liquidity pools and all that fancy stuff.
+
+## Getting Hired To Do Stacks-Related Work
+
+- **[ZeroAuth](https://zeroauthority.xyz/)**  
+  ZeroAuth is how people can get hired to do work in the stacks ecosystem. The vision of ZeroAuth is to provide the reputation layer for web3.
+
+## Launching NFTs
+
 - **[Gamma.io](https://gamma.io)**  
   Gamma.io is a leading NFT marketplace on Stacks, offering NFT minting, auctions, and trading with community support tools for creators.
+
+- **[Boom](https://www.boom.money)**  
+  Boom is a decentralized social platform and NFT marketplace that enables creators to mint, trade, and sell NFTs on Stacks.
 
 ## Development Tools & Platforms
 
@@ -55,6 +81,15 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 
 - **[Stacks Advocates & Community](https://stacks.org)**  
   The Stacks Advocates Program organizes global community engagement through events, workshops, and advocacy for Stacks adoption.
+
+- **[Stackslink]([https://stacks.org](https://x.com/StacksLink))**  
+  Your ultimate community resource for all things Stacks.
+
+- **[DeOrganized Media](https://x.com/DeOrganizedBTC)**  
+  DeOrganized Media is a daily show that covers everything happening in the Stacks Ecosystem by interviewing the most powerful emerging players.
+
+- **[100 Day Giveaway](https://x.com/SirLatimer1)**  
+  The 100 Day Giveaway onboards new members to the Stacks Ecosystems through education and Bitcoin Asset Giveaways every week.
 
 ## Global Expansion
 
