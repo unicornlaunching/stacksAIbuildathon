@@ -107,6 +107,9 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[DeOrganized Media](https://x.com/DeOrganizedBTC)**  
   DeOrganized Media is a daily show that covers everything happening in the Stacks Ecosystem by interviewing the most powerful emerging players.
 
+- **[Clarity Working Group](https://github.com/orgs/stacks-network/discussions/509)**
+  The key objective of the Clarity Working Group is to provide Clarity support on both specific Stacks projects & ecosystem-wide contracts. Examples of specific projects include milestones such as Nakamoto & sBTC, which both require multiple contracts such as PoX-4, the sBTC asset contract, & so on. Examples of ecosystem-wide/macro contracts include the Clarity-Bitcoin contract.
+
 </details>
 
 <details>
