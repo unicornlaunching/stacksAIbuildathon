@@ -85,6 +85,9 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Stackslink]([https://x.com/StacksLink)**  
   Your ultimate community resource for all things Stacks.
 
+- **[StacksLink](https://x.com/StacksLink)**  
+  Your ultimate community resource for all things Stacks.
+
 - **[DeOrganized Media](https://x.com/DeOrganizedBTC)**  
   DeOrganized Media is a daily show that covers everything happening in the Stacks Ecosystem by interviewing the most powerful emerging players.
 
