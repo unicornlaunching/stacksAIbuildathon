@@ -1,21 +1,5 @@
 # Stacks Blockchain Ecosystem Overview
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Wallets](#wallets)
-3. [Foundational Organizations](#foundational-organizations)
-4. [Self-Sovereign Identification Systems](#self-sovereign-identification-systems)
-5. [Decentralized Finance (DeFi)](#decentralized-finance-defi)
-6. [Launching Tokens](#launching-tokens)
-7. [Getting Hired To Do Stacks-Related Work](#getting-hired-to-do-stacks-related-work)
-8. [Launching NFTs](#launching-nfts)
-9. [Development Tools & Platforms](#development-tools--platforms)
-10. [Community Engagement](#community-engagement)
-11. [Investment Partners](#investment-partners)
-12. [Global Expansion](#global-expansion)
-13. [Parachain & Institutional Partners](#parachain--institutional-partners)
-14. [Conclusion](#conclusion)
-
 <details>
 <summary>Introduction</summary>
 
