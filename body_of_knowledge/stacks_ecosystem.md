@@ -40,9 +40,6 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Gamma.io](https://gamma.io)**  
   Gamma.io is a leading NFT marketplace on Stacks, offering NFT minting, auctions, and trading with community support tools for creators.
 
-- **[Boom](https://www.boom.money)**  
-  Boom is a decentralized social platform and NFT marketplace that enables creators to mint, trade, and sell NFTs on Stacks.
-
 </details>
 
 <details>
