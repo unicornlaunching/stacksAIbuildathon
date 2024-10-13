@@ -19,6 +19,33 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 </details>
 
 <details>
+<summary>I Want To Launch A Token</summary>
+
+- **[STX City](https://stx.city)**  
+  STX City is the easiest way to launch a token on Stacks without having to learn a single line of code. A bonding curve mechanism is used to dynamically generate price discovery for your token on Stacks without having to worry about liquidity pools and all that fancy stuff.
+
+</details>
+
+<details>
+<summary>I Want To Get Hired</summary>
+
+- **[ZeroAuth](https://zeroauthority.xyz/)**  
+  ZeroAuth is how people can get hired to do work in the stacks ecosystem. The vision of ZeroAuth is to provide the reputation layer for web3.
+
+</details>
+
+<details>
+<summary>I Want To Launch An NFT</summary>
+
+- **[Gamma.io](https://gamma.io)**  
+  Gamma.io is a leading NFT marketplace on Stacks, offering NFT minting, auctions, and trading with community support tools for creators.
+
+- **[Boom](https://www.boom.money)**  
+  Boom is a decentralized social platform and NFT marketplace that enables creators to mint, trade, and sell NFTs on Stacks.
+
+</details>
+
+<details>
 <summary>Foundational Organizations</summary>
 
 - **[Stacks Foundation](https://stacks.org)**  
@@ -58,33 +85,6 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Velar](https://velar.com/)**  
   Velar - Unlock Bitcoin Liquidity. Velar enables seamless swapping, trading, launching assets on premier Bitcoin L2s, providing unparalleled liquidity and flexibility.
   
-</details>
-
-<details>
-<summary>Launching Tokens</summary>
-
-- **[STX City](https://stx.city)**  
-  STX City is the easiest way to launch a token on Stacks without having to learn a single line of code. A bonding curve mechanism is used to dynamically generate price discovery for your token on Stacks without having to worry about liquidity pools and all that fancy stuff.
-
-</details>
-
-<details>
-<summary>Getting Hired To Do Stacks-Related Work</summary>
-
-- **[ZeroAuth](https://zeroauthority.xyz/)**  
-  ZeroAuth is how people can get hired to do work in the stacks ecosystem. The vision of ZeroAuth is to provide the reputation layer for web3.
-
-</details>
-
-<details>
-<summary>Launching NFTs</summary>
-
-- **[Gamma.io](https://gamma.io)**  
-  Gamma.io is a leading NFT marketplace on Stacks, offering NFT minting, auctions, and trading with community support tools for creators.
-
-- **[Boom](https://www.boom.money)**  
-  Boom is a decentralized social platform and NFT marketplace that enables creators to mint, trade, and sell NFTs on Stacks.
-
 </details>
 
 <details>
