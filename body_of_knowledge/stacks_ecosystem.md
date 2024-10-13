@@ -26,9 +26,6 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Daemon Technologies](https://www.daemontechnologies.co)**  
   Daemon Technologies supports decentralized Stacks mining by providing infrastructure and educational resources, promoting a decentralized and accessible mining ecosystem.
 
-- **[DeGrants](https://degrants.xyz)**  
-  Designed and incubated by dedicated community members from all corners of the Stacks ecosystem, the DeGrants (decentralized grants) program aims to fund and support a wide range of projects that are beneficial to Stacks community members and network.
-
 ## Self-Sovereign Identification Systems
 
 - **[BNS v2](https://www.bnsv2.com/)**
@@ -71,16 +68,10 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Clarinet](https://docs.hiro.so/clarinet)**  
   Clarinet is a development toolset for writing and deploying Clarity smart contracts on the Stacks blockchain.
 
-## Investment & Community Engagement
+## Community Engagement
 
-- **[Stacks Ventures](https://www.stacksventures.io)**  
-  Stacks Ventures is a venture capital firm that provides funding and mentorship to early-stage startups within the Stacks ecosystem.
-
-- **[PBC (formerly Blockstack PBC)](https://stacks.org)**  
-  PBC played a major role in the creation of Stacks and continues to focus on research, scalability, and Bitcoin integration.
-
-- **[Stacks Advocates & Community](https://stacks.org)**  
-  The Stacks Advocates Program organizes global community engagement through events, workshops, and advocacy for Stacks adoption.
+- **[100 Day Giveaway](https://x.com/SirLatimer1)**  
+  The 100 Day Giveaway onboards new members to the Stacks Ecosystems through education and Bitcoin Asset Giveaways every week.
 
 - **[StacksLink](https://x.com/StacksLink)**  
   Your ultimate community resource for all things Stacks.
@@ -88,8 +79,23 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[DeOrganized Media](https://x.com/DeOrganizedBTC)**  
   DeOrganized Media is a daily show that covers everything happening in the Stacks Ecosystem by interviewing the most powerful emerging players.
 
-- **[100 Day Giveaway](https://x.com/SirLatimer1)**  
-  The 100 Day Giveaway onboards new members to the Stacks Ecosystems through education and Bitcoin Asset Giveaways every week.
+## Investment Partners
+
+- **[BTC Frontier Fund](https://btcfrontier.fund/)**  
+  BTC Frontier Fund invests in startups and founders across the Bitcoin ecosystem. Includes, but not limited to: the main L1 as well as Lightning, Stacks, Rootstock, Ordinals, DLCs, and more.
+
+- **[Stacks Ventures](https://www.stacksventures.io)**  
+  Stacks Ventures is a venture capital firm that provides funding and mentorship to early-stage startups within the Stacks ecosystem.
+
+- **[DeGrants](https://degrants.xyz)**  
+  Designed and incubated by dedicated community members from all corners of the Stacks ecosystem, the DeGrants (decentralized grants) program aims to fund and support a wide range of projects that are beneficial to Stacks community members and network.
+
+- **[PBC (formerly Blockstack PBC)](https://stacks.org)**  
+  PBC played a major role in the creation of Stacks and continues to focus on research, scalability, and Bitcoin integration.
+
+- **[Stacks Advocates & Community](https://stacks.org)**  
+  The Stacks Advocates Program organizes global community engagement through events, workshops, and advocacy for Stacks adoption.
+
 
 ## Global Expansion
 
