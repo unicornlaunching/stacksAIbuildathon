@@ -82,9 +82,6 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 - **[Stacks Advocates & Community](https://stacks.org)**  
   The Stacks Advocates Program organizes global community engagement through events, workshops, and advocacy for Stacks adoption.
 
-- **[Stackslink]([https://x.com/StacksLink)**  
-  Your ultimate community resource for all things Stacks.
-
 - **[StacksLink](https://x.com/StacksLink)**  
   Your ultimate community resource for all things Stacks.
 
