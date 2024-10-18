@@ -116,7 +116,7 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 </details>
 
 <details>
-<summary>Investment Partners</summary>
+<summary>Get Your Project Funded</summary>
 
 - **[BTC Frontier Fund](https://btcfrontier.fund/)**  
   BTC Frontier Fund invests in startups and founders across the Bitcoin ecosystem. Includes, but not limited to: the main L1 as well as Lightning, Stacks, Rootstock, Ordinals, DLCs, and more.
@@ -132,6 +132,9 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 
 - **[Stacks Advocates & Community](https://stacks.org)**  
   The Stacks Advocates Program organizes global community engagement through events, workshops, and advocacy for Stacks adoption.
+
+- **[Critical Bounties](https://grants.stacks.org/)**  
+  The Stacks Foundation’s has awarded millions in grants for open-source tools, education, core protocol development and more. When an effort in your business can be made a public good or made open-source for others to benefit from, you may be able to earn a Critical Bounty.
 
 </details>
 
