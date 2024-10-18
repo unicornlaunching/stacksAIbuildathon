@@ -134,19 +134,12 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
   
 </details>
 
-
-
 <details>
-
 <summary>Gamification</summary>
 
 - **[SkullCoin](https://skullco.in/)**
-
- Begin your adventure with the Single Player game, a trailblazer in the Find-to-Earn genre. Dive into an on-chain experience enhanced by Encrypted NFTs with dual layers of information. This starting chapter reveals the game's narrative, leading you through historical and crypto puzzles.
-
+  Begin your adventure with the Single Player game, a trailblazer in the Find-to-Earn genre. Dive into an on-chain experience enhanced by Encrypted NFTs with dual layers of information. This starting chapter reveals the game's narrative, leading you through historical and crypto puzzles.
 </details>
-
-
 
 <details>
 <summary>Development Tools & Platforms</summary>
