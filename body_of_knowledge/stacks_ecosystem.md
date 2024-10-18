@@ -27,7 +27,7 @@ The Stacks blockchain ecosystem is a network of companies, developers, and organ
 </details>
 
 <details>
-<summary>Get Your Project Funded</summary>
+<summary>I Want An Investor</summary>
 
 - **[BTC Frontier Fund](https://btcfrontier.fund/)**  
   BTC Frontier Fund invests in startups and founders across the Bitcoin ecosystem. Includes, but not limited to: the main L1 as well as Lightning, Stacks, Rootstock, Ordinals, DLCs, and more.
