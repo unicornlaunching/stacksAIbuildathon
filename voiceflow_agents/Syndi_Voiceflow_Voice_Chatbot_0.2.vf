@@ -1,0 +1,1644 @@
+{
+  "version": {
+    "_version": 10.1,
+    "autoSaveFromRestore": false,
+    "components": [],
+    "creatorID": 957709,
+    "folders": {},
+    "manualSave": false,
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "6579c6bf984565862f64b783",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "sure",
+              "slots": []
+            },
+            {
+              "text": "certainly",
+              "slots": []
+            },
+            {
+              "text": "affirmative",
+              "slots": []
+            },
+            {
+              "text": "okay",
+              "slots": []
+            },
+            {
+              "text": "ok",
+              "slots": []
+            },
+            {
+              "text": "ya",
+              "slots": []
+            },
+            {
+              "text": "yep",
+              "slots": []
+            },
+            {
+              "text": "yup",
+              "slots": []
+            },
+            {
+              "text": "yea",
+              "slots": []
+            },
+            {
+              "text": "yes",
+              "slots": []
+            }
+          ],
+          "noteID": "m1eby0fn2",
+          "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\"."
+        },
+        {
+          "key": "6579c778dd3cca0fe0e0b152",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "negative",
+              "slots": []
+            },
+            {
+              "text": "nevermind",
+              "slots": []
+            },
+            {
+              "text": "not",
+              "slots": []
+            },
+            {
+              "text": "no thanks",
+              "slots": []
+            },
+            {
+              "text": "no way",
+              "slots": []
+            },
+            {
+              "text": "not now",
+              "slots": []
+            },
+            {
+              "text": "nah",
+              "slots": []
+            },
+            {
+              "text": "nay",
+              "slots": []
+            },
+            {
+              "text": "nope",
+              "slots": []
+            },
+            {
+              "text": "no",
+              "slots": []
+            }
+          ],
+          "noteID": "m1ebz0fvg",
+          "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\"."
+        },
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {},
+      "platform": "voiceflow"
+    },
+    "prototype": {
+      "data": {
+        "name": "Syndi",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "63068f72769976fe8ae0a58c",
+            "storage": {},
+            "variables": {},
+            "diagramID": "63068f72769976fe8ae0a58c"
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {
+          "659ba77eade9b84b2af77432": {
+            "codeId": "66d39bf13e1380dcbd02a4f8-659ba77eade9b84b2af77432-einpcahp.js",
+            "inputVars": {
+              "ElevenLabsAPIKey": {
+                "type": "text"
+              },
+              "VoiceID": {
+                "type": "text"
+              },
+              "Text": {
+                "type": "text"
+              }
+            },
+            "outputVars": {
+              "audioDataURI": {
+                "type": "text"
+              }
+            },
+            "pathCodes": [
+              "error",
+              "success"
+            ]
+          }
+        },
+        "referencedResponseIDs": [],
+        "slotsMap": {},
+        "platform": "voiceflow",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "voice",
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "cmsVariables": {
+          "sessions": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "defaultValue": null
+          },
+          "audioDataURI": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          },
+          "AI_Response": {
+            "isSystem": false,
+            "defaultValue": null,
+            "datatype": "any",
+            "isArray": false
+          }
+        },
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {}
+      },
+      "settings": {
+        "brandImage": "https://cm4-production-assets.s3.amazonaws.com/1725167559318-syndi-removebg-preview.png",
+        "avatar": "https://cm4-production-assets.s3.amazonaws.com/1725167578243-syndi-removebg-preview.png",
+        "password": ""
+      },
+      "platform": "voiceflow",
+      "type": "voice"
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "63068f72769976fe8ae0a58c"
+      }
+    ],
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "vf_chunks",
+      "audioDataURI",
+      "AI_Response"
+    ],
+    "programResources": {
+      "messages": {}
+    },
+    "_id": "66d39bf13e1380dcbd02a4f8",
+    "updatedAt": "2024-09-01T09:18:32.329Z",
+    "domains": [
+      {
+        "id": "clwqnrd880002cswz8jkq6foj",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "63068f72769976fe8ae0a58c"
+        ],
+        "rootDiagramID": "63068f72769976fe8ae0a58c",
+        "updatedAt": "2024-08-31T22:40:49.346Z"
+      }
+    ],
+    "projectID": "66d39bf13e1380dcbd02a4f7",
+    "rootDiagramID": "63068f72769976fe8ae0a58c",
+    "knowledgeBase": {
+      "settings": {
+        "summarization": {
+          "model": "claude-3-haiku",
+          "system": "You are an FAQ AI chat assistant. Information will be provided to help answer the user's questions. Always summarize your response to be as brief as possible and be extremely concise. Your responses should be fewer than a couple of sentences.",
+          "temperature": 0.1,
+          "mode": "prompt",
+          "prompt": ""
+        },
+        "chunkStrategy": {
+          "type": "recursive_text_splitter",
+          "size": 1200,
+          "overlap": 200
+        },
+        "search": {
+          "limit": 3,
+          "metric": "IP"
+        }
+      }
+    }
+  },
+  "diagrams": {
+    "63068f72769976fe8ae0a58c": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 100,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66d3f2a0278a6d08554b0854",
+                  "id": "60b7e7cad4b17f0ce7bddf11",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          633.86,
+                          -365.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          657.86,
+                          -365.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          657.86,
+                          -312.48
+                        ]
+                      },
+                      {
+                        "point": [
+                          585.23,
+                          -312.48
+                        ]
+                      },
+                      {
+                        "point": [
+                          585.23,
+                          -259.94
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            569.2210135430098,
+            -387.0312398956735
+          ]
+        },
+        "66d39c252869f2723c7d3df5": {
+          "type": "captureV2",
+          "data": {
+            "name": "Capture",
+            "intentScope": "GLOBAL",
+            "capture": {
+              "type": "query",
+              "variable": "last_utterance"
+            },
+            "noReply": null,
+            "noMatch": null,
+            "chips": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66d39c362869f2723c7d3e00",
+                  "id": "66d39c252869f2723c7d3df6",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1150.95,
+                          -163.81
+                        ]
+                      },
+                      {
+                        "point": [
+                          1237.13,
+                          -163.81
+                        ]
+                      },
+                      {
+                        "point": [
+                          1237.13,
+                          -229.87
+                        ]
+                      },
+                      {
+                        "point": [
+                          1323.32,
+                          -229.87
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "66d39c252869f2723c7d3df7"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d39c252869f2723c7d3df5",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "66d39c252869f2723c7d3df8": {
+          "type": "block",
+          "data": {
+            "name": "Capture User Question",
+            "steps": [
+              "66d39c252869f2723c7d3df5"
+            ],
+            "color": ""
+          },
+          "nodeID": "66d39c252869f2723c7d3df8",
+          "coords": [
+            984.821889830275,
+            -252.30071276511654
+          ]
+        },
+        "66d39c362869f2723c7d3dfe": {
+          "type": "ai_set",
+          "data": {
+            "name": "AI Set",
+            "label": "Capture Response as variable",
+            "sets": [
+              {
+                "mode": "prompt",
+                "prompt": "Answer this question in three sentences employing direct phrases from the context and present the answer as a thesis: \n{{[last_utterance].last_utterance}} ",
+                "variable": "66d39c4d3e1380dcbd02a582",
+                "instruction": "Answer this question in three sentences employing direct phrases from the context and present the answer as a thesis: {{[last_utterance].last_utterance}}"
+              }
+            ],
+            "system": "You are a helpful assistant that provides answers in one terse and pithy sentence.",
+            "maxTokens": 91,
+            "overrideParams": false,
+            "model": "claude-3-haiku",
+            "temperature": 0.15,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66d39c822869f2723c7d3e1d",
+                  "id": "66d39c362869f2723c7d3dff",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1654.45,
+                          -177.76
+                        ]
+                      },
+                      {
+                        "point": [
+                          1678.45,
+                          -177.76
+                        ]
+                      },
+                      {
+                        "point": [
+                          1678.45,
+                          -89.79
+                        ]
+                      },
+                      {
+                        "point": [
+                          1490.39,
+                          -89.79
+                        ]
+                      },
+                      {
+                        "point": [
+                          1490.39,
+                          -1.83
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "source": "knowledge_base"
+          },
+          "nodeID": "66d39c362869f2723c7d3dfe"
+        },
+        "66d39c362869f2723c7d3e00": {
+          "type": "block",
+          "data": {
+            "name": "Prompt AI with User Question and store the AI response as a variable",
+            "steps": [
+              "66d39c362869f2723c7d3dfe"
+            ],
+            "color": ""
+          },
+          "nodeID": "66d39c362869f2723c7d3e00",
+          "coords": [
+            1488.3218898302732,
+            -256.87204112376094
+          ]
+        },
+        "66d39c822869f2723c7d3e1b": {
+          "type": "function",
+          "data": {
+            "inputMapping": {
+              "Text": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "66d39c4d3e1380dcbd02a582"
+                    },
+                    " "
+                  ]
+                }
+              ],
+              "VoiceID": [
+                {
+                  "text": [
+                    "2fduu1GSCEUXJfRYbGYh"
+                  ]
+                }
+              ],
+              "ElevenLabsAPIKey": [
+                {
+                  "text": [
+                    "sk_1a0944b99b4efed756d1d6204692285f0a1f3e7220fc77ef"
+                  ]
+                }
+              ]
+            },
+            "outputMapping": {
+              "audioDataURI": "66d39cae3e1380dcbd02a5d7"
+            },
+            "portsV2": {
+              "byKey": {
+                "__vf__default": {
+                  "type": "",
+                  "target": null,
+                  "id": "66d39c822869f2723c7d3e1c"
+                },
+                "659bacb3ade9b84b2af77437": {
+                  "id": "66d39c852869f2723c7d3e23",
+                  "target": null,
+                  "type": ""
+                },
+                "659bb613ade9b84b2af7743b": {
+                  "id": "66d39c852869f2723c7d3e24",
+                  "target": "66d39cb72869f2723c7d3e2b",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1324.27,
+                          236.78
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          1040.47,
+                          236.78
+                        ]
+                      },
+                      {
+                        "point": [
+                          1040.47,
+                          66.72
+                        ]
+                      },
+                      {
+                        "point": [
+                          756.68,
+                          66.72
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "functionID": "659ba77eade9b84b2af77432",
+            "name": "ElevenLabs"
+          },
+          "nodeID": "66d39c822869f2723c7d3e1b"
+        },
+        "66d39c822869f2723c7d3e1d": {
+          "type": "block",
+          "data": {
+            "name": "Convert the AI response to Speech",
+            "steps": [
+              "66d39c822869f2723c7d3e1b"
+            ],
+            "color": ""
+          },
+          "nodeID": "66d39c822869f2723c7d3e1d",
+          "coords": [
+            1490.3938711083654,
+            -1.8289668206314218
+          ]
+        },
+        "66d39cb72869f2723c7d3e29": {
+          "type": "speak",
+          "data": {
+            "name": "Audio",
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "audio",
+                "content": "{audioDataURI}"
+              }
+            ],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66d3f2a0278a6d08554b0852",
+                  "id": "66d39cb72869f2723c7d3e2a",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          425.55,
+                          127.59
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          395.11,
+                          127.59
+                        ]
+                      },
+                      {
+                        "point": [
+                          395.11,
+                          -181.06
+                        ]
+                      },
+                      {
+                        "point": [
+                          419.11,
+                          -181.06
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d39cb72869f2723c7d3e29"
+        },
+        "66d39cb72869f2723c7d3e2b": {
+          "type": "block",
+          "data": {
+            "name": "Allow user to play answer as speech",
+            "steps": [
+              "66d39cb72869f2723c7d3e29"
+            ],
+            "color": ""
+          },
+          "nodeID": "66d39cb72869f2723c7d3e2b",
+          "coords": [
+            591.6761257587063,
+            39.719939154651
+          ]
+        },
+        "66d3f2a0278a6d08554b0852": {
+          "type": "speak",
+          "data": {
+            "name": "Audio",
+            "randomize": true,
+            "canvasVisibility": "preview",
+            "dialogs": [
+              {
+                "voice": "audio",
+                "content": "https://cm4-production-assets.s3.amazonaws.com/1725167360105-syndi---my-name-is-syndi-so-whats-on-your-mind.mp3"
+              }
+            ],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "66d39c252869f2723c7d3df5",
+                  "id": "66d3f2a0278a6d08554b0853",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          751.36,
+                          -172.07
+                        ]
+                      },
+                      {
+                        "point": [
+                          818.7,
+                          -173.43
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "66d3f2a0278a6d08554b0852"
+        },
+        "66d3f2a0278a6d08554b0854": {
+          "type": "block",
+          "data": {
+            "name": "Prompt User With Question",
+            "steps": [
+              "66d3f2a0278a6d08554b0852"
+            ],
+            "color": ""
+          },
+          "nodeID": "66d3f2a0278a6d08554b0854",
+          "coords": [
+            585.2307046738074,
+            -259.93661667922584
+          ]
+        }
+      },
+      "offsetX": 104.62318916559217,
+      "offsetY": 609.6249919165389,
+      "modified": 1661374322,
+      "children": [],
+      "creatorID": 957709,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "66d39bf13e1380dcbd02a4f9",
+      "diagramID": "63068f72769976fe8ae0a58c",
+      "versionID": "66d39bf13e1380dcbd02a4f8"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "6579c6bf984565862f64b783",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "Yes",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds affirmatively or agrees to a question or statement using words like \"yes\", \"yea\", \"yup\", \"yep\", \"ya\", \"ok\", \"okay\", \"affirmative\", \"certainly\", or \"sure\".",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "6579c778dd3cca0fe0e0b152",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "No",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds negatively or declines something, using words like \"no\", \"nope\", \"nay\", \"nah\", \"not now\", \"no way\", \"no thanks\", \"not\", \"nevermind\", or \"negative\".",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "None",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "None",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    }
+  ],
+  "utterances": [
+    {
+      "id": "6656111db2836a439cae2165",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "sure"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2166",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "certainly"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2167",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "affirmative"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2168",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "okay"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2169",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "ok"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae216a",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "ya"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae216b",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "yep"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae216c",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "yup"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae216d",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "yea"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae216e",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "yes"
+          ]
+        }
+      ],
+      "intentID": "6579c6bf984565862f64b783",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae216f",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "negative"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2170",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "nevermind"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2171",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "not"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2172",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "no thanks"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2173",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "no way"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2174",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "not now"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2175",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "nah"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2176",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "nay"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2177",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "nope"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    },
+    {
+      "id": "6656111db2836a439cae2178",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "text": [
+        {
+          "text": [
+            "no"
+          ]
+        }
+      ],
+      "intentID": "6579c778dd3cca0fe0e0b152",
+      "language": "en-us",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [],
+  "responseMessages": [],
+  "responseDiscriminators": [],
+  "variables": [
+    {
+      "id": "sessions",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "sessions",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "user_id",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "user_id",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "timestamp",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "timestamp",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "platform",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "platform",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "intent_confidence",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "intent_confidence",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "last_response",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "last_response",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "last_event",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "last_event",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "last_utterance",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "last_utterance",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "vf_memory",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "vf_memory",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-08-31T22:40:49.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "66d39cae3e1380dcbd02a5d7",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "audioDataURI",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:43:58.000Z",
+      "updatedAt": "2024-08-31T22:43:58.000Z",
+      "updatedByID": 957709
+    },
+    {
+      "id": "66d39c4d3e1380dcbd02a582",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "AI_Response",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2024-08-31T22:42:21.000Z",
+      "updatedAt": "2024-08-31T22:42:21.000Z",
+      "updatedByID": 957709
+    }
+  ],
+  "workflows": [
+    {
+      "id": "6656111db2836a439cae2179",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "Home",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "63068f72769976fe8ae0a58c",
+      "assigneeID": null,
+      "description": null,
+      "createdAt": "2024-08-31T22:40:49.000Z",
+      "updatedAt": "2024-09-01T09:19:57.000Z",
+      "updatedByID": 957709
+    }
+  ],
+  "cardButtons": [],
+  "attachments": [],
+  "functions": [
+    {
+      "id": "659ba77eade9b84b2af77432",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "name": "ElevenLabs",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdByID": 957709,
+      "folderID": null,
+      "code": "export default async function main(args) {\n    const { VoiceID: inputVoiceID, Text, ElevenLabsAPIKey } = args.inputVars\n    let VoiceID = inputVoiceID;\n\n    try {\n        if (!ElevenLabsAPIKey) {\n            return {\n                outputVars: {\n                    error: `Need an ElevenLabs API Key`\n                },\n                next: {\n                    path: 'error'\n                },\n                trace: [\n                    {\n                        type: 'debug',\n                        payload: {\n                            message: `Need an ElevenLabs API Key`\n                        }\n                    }\n                ],\n            }\n        }\n\n        if (!Text) {\n            return {\n                outputVars: {\n                    error: `Need a text to convert`\n                },\n                next: {\n                    path: 'error'\n                },\n                trace: [\n                    {\n                        type: 'debug',\n                        payload: {\n                            message: `Need a text to convert`\n                        }\n                    }\n                ],\n            }\n        }\n\n        if (!VoiceID) {\n            VoiceID = '21m00Tcm4TlvDq8ikWAM'\n        }\n\n        const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VoiceID}`,\n            {\n                method: 'POST',\n                headers: {\n                    'Content-Type': 'application/json',\n                    accept: 'audio/mpeg',\n                    'xi-api-key': `${ElevenLabsAPIKey}`\n                },\n                body: JSON.stringify({\n                    text: Text,\n                    model_id: 'eleven_multilingual_v2'\n                })\n            },\n            { parseType: 'arrayBuffer' }\n        );\n\n        if (!response.ok) {\n            return {\n                next: {\n                    path: 'error'\n                },\n                trace: [\n                    {\n                        type: 'debug',\n                        payload: {\n                            message: `Error with ElevenLabs API`\n                        }\n                    }\n                ],\n            }\n        }\n\n        let uint8Array = new Uint8Array(response.arrayBuffer);\n        let binaryString = Array.prototype.map.call(uint8Array, function (byte) {\n            return String.fromCharCode(byte);\n        }).join('');\n\n        function toBase64(input) {\n            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';\n            let str = '';\n            let padding = (input.length % 3);\n            for (let i = 0; i < input.length; i += 3) {\n                let a = input.charCodeAt(i);\n                let b = input.charCodeAt(i + 1);\n                let c = input.charCodeAt(i + 2);\n                str += chars[a >> 2];\n                str += chars[((a & 3) << 4) | (b >> 4)];\n                str += chars[((b & 15) << 2) | (c >> 6)];\n                str += chars[c & 63];\n            }\n            return padding ? str.slice(0, padding - 3) + '==='.substring(padding) : str;\n        }\n\n        let base64Audio = toBase64(binaryString);\n        const audioData = `data:audio/mpeg;base64,${base64Audio}`\n\n        return {\n            outputVars: {\n                audioDataURI: audioData\n            },\n            next: {\n                path: 'success'\n            },\n            trace: [\n                {\n                    type: 'debug',\n                    payload: {\n                        message: `Successfully converted the text`\n                    }\n                },\n                {\n                    type: 'audio',\n                    payload: {\n                        src: audioData\n                    }\n                }\n            ],\n        }\n\n    } catch (error) {\n        return {\n            outputVars: {\n                error: error\n            },\n            next: {\n                path: 'error'\n            },\n            trace: [\n                {\n                    type: 'debug',\n                    payload: {\n                        message: error\n                    }\n                }\n            ],\n        }\n    }\n}",
+      "image": "https://dev-voiceflow-images.s3.amazonaws.com/1704968039513-eleven_labs.png",
+      "description": "Integration with ElevenLabs API. \n\nTo provide values for `VoiceID` and `ElevenLabsAPIKey` see the documentation that eleven labs:\n\nhttps://elevenlabs.io/docs/api-reference/text-to-speech",
+      "pathOrder": [
+        "659bacb3ade9b84b2af77437",
+        "659bb613ade9b84b2af7743b"
+      ],
+      "createdAt": "2024-08-31T22:43:00.000Z",
+      "updatedAt": "2024-08-31T22:43:00.000Z",
+      "updatedByID": 957709
+    }
+  ],
+  "functionPaths": [
+    {
+      "id": "659bacb3ade9b84b2af77437",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "name": "error",
+      "label": "Error",
+      "functionID": "659ba77eade9b84b2af77432",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:43:00.147Z",
+      "updatedAt": "2024-08-31T22:43:00.000Z"
+    },
+    {
+      "id": "659bb613ade9b84b2af7743b",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "name": "success",
+      "label": "Success",
+      "functionID": "659ba77eade9b84b2af77432",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "createdAt": "2024-08-31T22:43:00.148Z",
+      "updatedAt": "2024-08-31T22:43:00.000Z"
+    }
+  ],
+  "functionVariables": [
+    {
+      "id": "659ba9dfade9b84b2af77436",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "name": "audioDataURI",
+      "type": "output",
+      "functionID": "659ba77eade9b84b2af77432",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "description": "",
+      "createdAt": "2024-08-31T22:43:00.147Z",
+      "updatedAt": "2024-08-31T22:43:00.000Z"
+    },
+    {
+      "id": "659fb8c9ade9b84b2af77458",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "name": "ElevenLabsAPIKey",
+      "type": "input",
+      "functionID": "659ba77eade9b84b2af77432",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "description": "ElevenLabs API Key",
+      "createdAt": "2024-08-31T22:43:00.148Z",
+      "updatedAt": "2024-08-31T22:43:00.000Z"
+    },
+    {
+      "id": "659fb8ddade9b84b2af77459",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "name": "VoiceID",
+      "type": "input",
+      "functionID": "659ba77eade9b84b2af77432",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "description": "Voice ID from ElevenLabs",
+      "createdAt": "2024-08-31T22:43:00.149Z",
+      "updatedAt": "2024-08-31T22:43:00.000Z"
+    },
+    {
+      "id": "659fba48ade9b84b2af7745a",
+      "environmentID": "66d39bf13e1380dcbd02a4f8",
+      "updatedByID": 957709,
+      "name": "Text",
+      "type": "input",
+      "functionID": "659ba77eade9b84b2af77432",
+      "assistantID": "66d39bf13e1380dcbd02a4f7",
+      "description": "Text to convert",
+      "createdAt": "2024-08-31T22:43:00.150Z",
+      "updatedAt": "2024-08-31T22:43:00.000Z"
+    }
+  ],
+  "project": {
+    "type": "voice",
+    "name": "Syndi",
+    "image": "",
+    "teamID": "eOn2ZRv5nK",
+    "members": [],
+    "privacy": "private",
+    "platform": "voiceflow",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 957709,
+    "updatedBy": 957709,
+    "apiPrivacy": "private",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "_id": "66d39bf13e1380dcbd02a4f7",
+    "updatedAt": "2024-09-01T05:11:54.070Z",
+    "knowledgeBase": {
+      "settings": {
+        "summarization": {
+          "prompt": "",
+          "mode": "prompt",
+          "model": "claude-3-haiku",
+          "maxTokens": 128,
+          "temperature": 0.1,
+          "system": "You are an FAQ AI chat agent. Information will be provided to help answer the user's questions. Always summarize your response to be as brief as possible and be extremely concise. Your responses should be fewer than a couple of sentences."
+        },
+        "chunkStrategy": {
+          "type": "recursive_text_splitter",
+          "size": 1200,
+          "overlap": 200
+        },
+        "search": {
+          "limit": 3,
+          "metric": "IP"
+        },
+        "embeddingModel": {
+          "model": "text-embedding-3-large",
+          "size": 1024
+        }
+      },
+      "documents": {
+        "66d39fe6ea1a40e268ae972d": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "text",
+            "name": "TABLE OF CONTENTS%0A%0A- PHASE ONE: THE CONFERENCE AS A MICROCOSM%0A  - What is a Conference?%0A    - Read this to me%0A    - What is a conference?%0A    - A conference is a sea of narcissus, in which we swim thr",
+            "canEdit": true
+          },
+          "updatedAt": "2024-08-31T22:57:42.164Z",
+          "creatorID": 957709,
+          "documentID": "66d39fe6ea1a40e268ae972d",
+          "tags": [],
+          "s3ObjectRef": "66d39bf13e1380dcbd02a4f7/TABLE OF CONTENTS%0A%0A- PHASE ONE: THE CONFERENCE AS A MICROCOSM%0A  - What is a Conference?%0A    - Read this to me%0A    - What is a conference?%0A    - A conference is a sea of narcissus, in which we swim thr",
+          "version": 0
+        },
+        "66d3a68be8f9cbdfd10f93e1": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "pdf",
+            "name": "Scaling in the Billions By Penetrating South Asia (3).pdf"
+          },
+          "updatedAt": "2024-08-31T23:26:03.398Z",
+          "creatorID": 957709,
+          "documentID": "66d3a68be8f9cbdfd10f93e1",
+          "tags": [],
+          "s3ObjectRef": "66d39bf13e1380dcbd02a4f7/Scaling in the Billions By Penetrating South Asia (3).pdf",
+          "version": 0
+        },
+        "66d3a68bdb2334713fdb618b": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "pdf",
+            "name": "Host-Parasite Coevolution and the Red Queen Hypothesis_ How did she come about and why is she still prevalent_.pdf"
+          },
+          "updatedAt": "2024-08-31T23:26:03.467Z",
+          "creatorID": 957709,
+          "documentID": "66d3a68bdb2334713fdb618b",
+          "tags": [],
+          "s3ObjectRef": "66d39bf13e1380dcbd02a4f7/Host-Parasite Coevolution and the Red Queen Hypothesis_ How did she come about and why is she still prevalent_.pdf",
+          "version": 0
+        },
+        "66d3a68ce8f9cbdfd10f93e2": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "pdf",
+            "name": "What I Learned on X - Vol. 1 (Amazon Full) including B (6).pdf"
+          },
+          "updatedAt": "2024-08-31T23:26:04.350Z",
+          "creatorID": 957709,
+          "documentID": "66d3a68ce8f9cbdfd10f93e2",
+          "tags": [],
+          "s3ObjectRef": "66d39bf13e1380dcbd02a4f7/What I Learned on X - Vol. 1 (Amazon Full) including B (6).pdf",
+          "version": 0
+        },
+        "66d3a68ce8f9cbdfd10f93e3": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "pdf",
+            "name": "beyond-positive-thinking.pdf"
+          },
+          "updatedAt": "2024-08-31T23:26:04.555Z",
+          "creatorID": 957709,
+          "documentID": "66d3a68ce8f9cbdfd10f93e3",
+          "tags": [],
+          "s3ObjectRef": "66d39bf13e1380dcbd02a4f7/beyond-positive-thinking.pdf",
+          "version": 0
+        },
+        "66d3a68cdb2334713fdb618c": {
+          "status": {
+            "type": "SUCCESS"
+          },
+          "data": {
+            "type": "pdf",
+            "name": "Three Simple Steps A Map to Success in Business and Life (Trevor G Blake) (z-lib.org).pdf"
+          },
+          "updatedAt": "2024-08-31T23:26:04.676Z",
+          "creatorID": 957709,
+          "documentID": "66d3a68cdb2334713fdb618c",
+          "tags": [],
+          "s3ObjectRef": "66d39bf13e1380dcbd02a4f7/Three Simple Steps A Map to Success in Business and Life (Trevor G Blake) (z-lib.org).pdf",
+          "version": 0
+        }
+      }
+    },
+    "devVersion": "66d39bf13e1380dcbd02a4f8",
+    "liveVersion": "66d3f3fa4dc5e576c58c4e7e"
+  },
+  "_version": "1.2",
+  "variableStates": []
+}
