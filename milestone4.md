@@ -14,10 +14,10 @@ After testing a few user interfaces, The Stacks Interactive Ecosystem Visualizat
 - [GPSC Feedback on Visualization](https://x.com/attractfund1ng/status/1851820080188805498)
 
 ### AI-powered Chatbot Prototype
-<iframe src="https://creator.voiceflow.com/prototype/66e393f708a05874bb3b1cce" width="100%" height="600" style="border:none;"></iframe>
+- [Syndi The FAQ Recruiting & Matchmaking Agent](https://creator.voiceflow.com/prototype/66e393f708a05874bb3b1cce)
 
 ### Accelerating Product Development with AI with Zero To Clarity
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/la7nahFaVDY?si=ncCPm7CDnGyIhj_W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+- [Watch](https://www.youtube.com/embed/la7nahFaVDY?si=ncCPm7CDnGyIhj_W)
 
 ### Teaching Key Founders How To Code on Stacks with AI
 > [@GPSC_STX](https://twitter.com/GPSC_STX?ref_src=twsrc%5Etfw) learns how to code. [pic.twitter.com/gw6GSsYyEP](https://t.co/gw6GSsYyEP)
