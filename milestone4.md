@@ -1,4 +1,4 @@
-# The Syndicate - Stacks DeGrants Phase II Milestone Report (3 of 4)
+# The Syndicate - Stacks DeGrants Phase II Milestone Report (4 of 4)
 
 ## Purpose
 The purpose of Syndi The Community Co-Pilot is to accelerate the go-to-market of key founders and projects in the Stacks Ecosystem.
