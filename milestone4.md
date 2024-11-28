@@ -10,8 +10,9 @@ Milestones 1 and 2 were all about building and testing AI recruiting, onboarding
 
 ### The Stacks Interactive Ecosystem Visualization
 After testing a few user interfaces, The Stacks Interactive Ecosystem Visualization is the most effective onboarding tool.
-- [Experience The Stacks Ecosystem](https://thestacksecosystem.netlify.app/)
+- [Experience The Stacks Ecosystem](https://thestacksecosystem.netlify.app/) - Milestone 3
 - [GPSC Feedback on Visualization](https://x.com/attractfund1ng/status/1851820080188805498)
+- [Experience The Stacks Ecosystem](https://discoverstacks.netlify.app/) - Milestone 4
 
 ### AI-powered Chatbot Prototype
 - [Syndi The FAQ Recruiting & Matchmaking Agent](https://creator.voiceflow.com/prototype/66e393f708a05874bb3b1cce)
@@ -20,7 +21,7 @@ After testing a few user interfaces, The Stacks Interactive Ecosystem Visualizat
 - [Watch](https://www.youtube.com/embed/la7nahFaVDY?si=ncCPm7CDnGyIhj_W)
 
 ### Teaching Key Founders How To Code on Stacks with AI
-> [@GPSC_STX](https://twitter.com/GPSC_STX?ref_src=twsrc%5Etfw) learns how to code. [pic.twitter.com/gw6GSsYyEP](https://t.co/gw6GSsYyEP)
+> [@GPSC_STX](https://twitter.com/GPSC_STX?ref_src=twsrc%5Etfw) learns how to code. [http://pic.twitter.com/gw6GSsYyEP](https://t.co/gw6GSsYyEP)
 > — Soyouwanna (@attractfund1ng) [October 31, 2024](https://twitter.com/attractfund1ng/status/1851811571028144318?ref_src=twsrc%5Etfw)
 
 ### DEFI with AI On Stacks with DeOrganized Podcast
