@@ -9,8 +9,9 @@ The purpose of Syndi The Community Co-Pilot is to accelerate the go-to-market of
 - Stacks Ecosystem Body of Knowledge (folder) for NotebookLM Agent Creation
 - Stacks Ecosystem Visualization (HTML CSS JS)
 - 5+ AI Buildathons (Spaces)
-- [One-on-One Buildathon Showcase One](https://stonearcade.netlify.app/)
-- [One-on-One Buildathon Showcase Two](https://stx.vision/)
+- [Inspired Creation 1: The Stacks Arcade on Stone by Stu](https://stonearcade.netlify.app/)
+- [Inspired Creation 2: STX.Vision by TripnMonkey](https://stx.vision/)
+- [Inspired Creaiton 3: Ayden's Pixelation Engine for Games on Stacks](https://youtu.be/gBXb4rJhbPc?si=Mnx5wVq3gGSu5j4J)
 
 ## Recap from Milestones 1-3
 Milestones 1 and 2 were all about building and testing AI recruiting, onboarding, testing product development, and go-to-market AI accelerants with the community. Milestones 3 and 4 are all about building their feedback into the app.
